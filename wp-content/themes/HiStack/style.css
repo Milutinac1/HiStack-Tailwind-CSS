@@ -1,0 +1,264 @@
+/*!
+Theme Name: HiStack Auto-Gen Platform
+Theme URI: https://histack.rs/
+Author: HiStack Corporation
+Author URI: https://histack.rs/
+Description: An automated web platform developed and maintained by HiStack Corporation.
+Version: 10.10.02
+Tested up to: 10.10.02
+Requires PHP: 8.3
+License: GNU General Public License v2 or later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: histack
+Tags: auto-gen, automation, custom-animation, custom-logo, custom-design
+
+© 2025 HiStack Corporation. All rights reserved.
+This theme is licensed under the GNU General Public License v2.  
+However, certain components, modifications, and proprietary extensions  
+are additionally protected under the HiStack Secure License (HSL).  
+
+Any unauthorized distribution, modification, or reproduction of proprietary elements,  
+in whole or in part, is strictly prohibited.  
+
+This theme is an exclusive product of HiStack Corporation and is protected by  
+intellectual property laws. Any violation of the license terms may result in legal action.
+
+For licensing inquiries, please contact us.
+*/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-family: "Titillium Web", serif;
+    font-style: normal;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@keyframes marquee {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0%);
+    }
+  }
+
+  .animate-marquee {
+    animation: marquee 20s linear infinite;
+}
+
+.brands-wrapper {
+    display: flex;
+  }
+  @keyframes infinite-scroll {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+  .brands-wrapper {
+    animation: infinite-scroll 60s linear infinite;
+    align-items: center;
+    justify-content: center;
+  }
+  @media (min-width: 768px) {
+    .brands-wrapper {
+      justify-content: flex-start;
+    }
+  }
+  .brands-wrapper img {
+    max-width: none;
+}
+
+.brands-wrapper-reverse {
+    display: flex;
+  }
+  @keyframes infinite-scroll-reverse {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+  .brands-wrapper-reverse {
+    animation: infinite-scroll-reverse 60s linear infinite;
+    align-items: center;
+    justify-content: center;
+  }
+  @media (min-width: 768px) {
+    .brands-wrapper-reverse {
+      justify-content: flex-start;
+    }
+  }
+  .brands-wrapper-reverse img {
+    max-width: none;
+}
+
+.mask-custom {
+    mask-image: linear-gradient(to right, transparent 0, black 32px, black calc(100% - 50px), transparent 100%);
+    -webkit-mask-image: linear-gradient(to right, transparent 0, black 32px, black calc(100% - 50px), transparent 100%);
+}
+
+.swiper-wrapper {
+  width: 100%;
+  height: max-content !important;
+  -webkit-transition-timing-function: linear !important;
+  transition-timing-function: linear !important;
+  position: relative;
+}
+
+.slider-animation {
+  width: 50px;
+  height: auto;
+  animation: slide 5s ease-in-out infinite;
+}
+
+@keyframes slide {
+  0% {
+      transform: translateX(0);
+  }
+  50% {
+      transform: translateX(20px);
+  }
+  100% {
+      transform: translateX(0);
+  }
+}
+
+#scroll-to-top-button {
+  transition: opacity 0.3s ease-in-out;
+}
+
+.active div.line {
+  width: 10rem;
+  background-color: white !important;
+  transition: width 200ms ease;
+}
+
+.line {
+  width: 3rem;
+  height: 3px;
+  background-color: rgba(255, 255, 255, 0.5);
+  transition: all 200ms ease;
+}
+
+#pagination li:hover {
+  cursor: pointer;
+  color: white;
+}
+
+.fade {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.fade.active {
+  opacity: 1;
+}
+
+.icon-rotate-header-primary:hover .i-rotate-custom{
+  transform: rotate(180deg);
+}
+
+.icon-rotate-header-primary .i-rotate-custom {
+  transition: transform 0.2s ease;
+}
+
+@keyframes flip {
+  0% {
+    transform: scaleY(1);
+  }
+  100% {
+    transform: scaleY(-1);
+  }
+}
+
+.flip {
+  animation: flip 0.3s forwards;
+}
+
+#mobileMenu {
+  transition: transform 0.3s ease-in-out;
+}
+
+body.no-scroll {
+  overflow: hidden;
+}
+
+#mobileMenu.open {
+  transform: translateX(0);
+  transition: transform 0.3s ease-in-out;
+}
+
+#mobileMenu {
+  height: 100vh;
+  overflow-y: auto;
+}
+
+#searchPopup {
+  transition: transform 500ms cubic-bezier(0.25, 0.8, 0.25, 1), opacity 500ms ease-in-out;
+  transform: translateY(-100%);
+  opacity: 0;
+}
+
+#searchPopup.open {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+#message {
+  resize: vertical!important;
+  max-height: 300px!important;
+  min-height: 150px!important;
+}
+
+#custom-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: #f87171 #f4f4f4;
+}
+
+#custom-scrollbar::-webkit-scrollbar {
+  width: 8px;
+}
+
+#custom-scrollbar::-webkit-scrollbar-track {
+  background: #f4f4f4;
+}
+
+#custom-scrollbar::-webkit-scrollbar-thumb {
+  background-color: #f87171;
+  border-radius: 4px;
+  border: 2px solid #f4f4f4;
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-100%); }
+}
+
+.animate-marquee {
+  display: flex;
+  min-width: max-content;
+  animation: marquee 250s linear infinite;
+}
+
+@keyframes marquee-reverse {
+  0% { transform: translateX(-50%); }
+  100% { transform: translateX(50%); }
+}
+
+.animate-marquee-reverse {
+  display: flex;
+  min-width: max-content;
+  animation: marquee-reverse 250s linear infinite;
+}
