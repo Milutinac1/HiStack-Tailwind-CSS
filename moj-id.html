@@ -146,11 +146,25 @@ PHP modules executed successfully.
         <!-- Login form 'id_log-in' section start -->
         <section class="min-h-screen w-full flex flex-col justify-center items-center py-5">
             <!-- Content dynamically loaded by: 'loading-pattern-id_9b3e.php' -->
-            <div class="p-5 flex justify-center items-center mb-3 lg:mb-8 z-50">
+            <div class="p-5 flex justify-center items-center mb-3 lg:mb-8 z-50 gap-5">
               <a href="index.html">
-                <img src="wp-content/uploads/2025/01/logo-full-white.png" alt="HiStack Logo" class="h-10 md:h-12 2xl:h-14 w-auto object-contain">
+                <img src="wp-content/uploads/2025/01/logo-full-white.png" alt="HiStack Logo" class="h-10 md:h-12 2xl:h-12 w-auto object-contain">
               </a>
-              <img src="wp-content/uploads/2025/01/srb-icon.png" alt class="h-8 lg:h-10 ml-2">
+              <div class="hidden xl:block relative group icon-rotate-header-primary">
+                  <div class="text-[17px] text-white hover:text-[#ed1a3b] transition duration-100 flex items-center gap-2 cursor-pointer">
+                    <img src="wp-content/uploads/2025/05/RS-Serbia-Flag-icon.png" alt class="h-6 shadow rounded">
+                    <span class="text-base lg:text-[17px] font-semibold"> SRB</span>
+                    <i class="far fa-chevron-down i-rotate-custom"></i>
+                  </div>
+                  <div class="fixed container t-0 left-1/2 transform -translate-x-1/2 opacity-0 visibility-hidden pointer-events-none group-hover:opacity-100 group-hover:visibility-visible group-hover:pointer-events-auto transition-all duration-300 z-50">
+                    <div class="mt-4 bg-gray-50 shadow border border-gray-50 rounded-lg p-5 max-w-[125px] ms-auto me-2 flex justify-center">
+                      <a href="/en/" class="text-[17px] hover:text-[#ed1a3b] transition duration-100 flex items-center gap-2">
+                        <img src="wp-content/uploads/2025/05/EN-United-Kingdom-Flag-icon.png" alt class="h-6 shadow rounded">
+                        <span class="text-base lg:text-[17px] font-semibold"> ENG</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
             </div>
             <div class="container rounded-2xl overflow-hidden flex flex-wrap-reverse lg:flex-nowrap">
               <div class="p-6 lg:p-8 text-white bg-red-500 bg-opacity-80 backdrop-blur-xl w-full lg:flex-1">
