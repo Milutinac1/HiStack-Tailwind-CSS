@@ -7,6 +7,29 @@
  * Contact: https://histack.rs/
  */
 
+const hoverElements = document.querySelectorAll('.hoverElement');
+const overlay = document.getElementById('header-black-overlay-on-hover');
+const header = document.querySelector('header');
+
+hoverElements.forEach(el => {
+  el.addEventListener('mouseenter', () => {
+    overlay.classList.remove('opacity-0', 'pointer-events-none');
+    overlay.classList.add('opacity-70', 'pointer-events-auto');
+
+    header.classList.remove('bg-opacity-70');
+    header.classList.add('bg-opacity-100');
+  });
+
+  el.addEventListener('mouseleave', () => {
+    overlay.classList.remove('opacity-70', 'pointer-events-auto');
+    overlay.classList.add('opacity-0', 'pointer-events-none');
+
+    header.classList.remove('bg-opacity-100');
+    header.classList.add('bg-opacity-70');
+  });
+});
+
+
 document.getElementById("year").textContent = new Date().getFullYear();
 
 var swiper = new Swiper(".multiple-slide-carousel", {
