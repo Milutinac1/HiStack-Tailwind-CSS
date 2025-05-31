@@ -262,3 +262,11 @@ body.no-scroll {
   min-width: max-content;
   animation: marquee-reverse 250s linear infinite;
 }
+
+.elegant-red-conic-bg {
+  background: conic-gradient(from 315deg, #FFD8D5, #FFFFFF);
+}
+
+.elegant-black-conic-bg {
+  background: conic-gradient(from 315deg, #010101, #1F1F1F);
+}
