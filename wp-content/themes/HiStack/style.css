@@ -263,10 +263,23 @@ body.no-scroll {
   animation: marquee-reverse 250s linear infinite;
 }
 
+#paket-1-overlay, #paket-2-overlay, #paket-3-overlay, #paket-4-overlay, #paket-5-overlay, #paket-6-overlay, #paket-7-overlay, #paket-8-overlay, #paket-9-overlay {
+  width: 95%;
+}
+
 .elegant-red-conic-bg {
   background: conic-gradient(from 315deg, #FFD8D5, #FFFFFF);
 }
 
 .elegant-black-conic-bg {
   background: conic-gradient(from 315deg, #010101, #1F1F1F);
+}
+
+.elegant-black-long-conic-bg {
+  background-color: #010101;
+  background-image: 
+    radial-gradient(circle at 30% 40%, rgba(25, 70, 90, 0.6), transparent 60%),
+    radial-gradient(circle at 70% 80%, rgba(15, 50, 70, 0.5), transparent 60%);
+  background-repeat: no-repeat;
+  background-size: cover;
 }

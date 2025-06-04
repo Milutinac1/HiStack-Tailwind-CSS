@@ -34,23 +34,23 @@ document.getElementById("year").textContent = new Date().getFullYear();
 
 var swiper = new Swiper(".multiple-slide-carousel", {
     loop: true,
-    slidesPerView: 1, // Default za najmanje ekrane
-    spaceBetween: 10, // Razmak između slajdova
+    slidesPerView: 1,
+    spaceBetween: 10,
     navigation: {
       nextEl: ".multiple-slide-carousel .swiper-button-next",
       prevEl: ".multiple-slide-carousel .swiper-button-prev",
     },
     breakpoints: {
-      320: { // Za najmanje ekrane (mobiteli)
-        slidesPerView: 1.1, // Prikazuje 1 ceo slajd + 10% sledećeg
+      320: {
+        slidesPerView: 1.15,
         spaceBetween: 10
       },
-      768: { // md breakpoint
-        slidesPerView: 1.5, // 1 ceo + pola sledećeg
+      768: {
+        slidesPerView: 1.2,
         spaceBetween: 20
       },
-      1280: { // xl breakpoint
-        slidesPerView: 2.5, // 2 cela slajda + pola trećeg
+      1280: {
+        slidesPerView: 1.7,
         spaceBetween: 30
       }
     }
@@ -73,18 +73,14 @@ mybutton.onclick = function() {
 }
 
 document.addEventListener("DOMContentLoaded", function() {
-    // Selektovanje svih li elemenata u paginaciji
     const paginationItems = document.querySelectorAll("#pagination li");
   
-    // Selektovanje svih slika, komentara i informacija o autorima
     const slides = document.querySelectorAll(".slider-image");
     const comments = document.querySelectorAll("#comment-section p");
     const authors = document.querySelectorAll("[id^='author-info-']");
     
-    // Dodavanje event listenera na svaki <li> u paginaciji
     paginationItems.forEach(function(item, index) {
       item.addEventListener("click", function() {
-        // Prebacivanje klase active za slike, komentare i autore sa fade efektom
         slides.forEach(slide => {
           slide.classList.remove("active");
           slide.classList.add("hidden");
@@ -98,12 +94,10 @@ document.addEventListener("DOMContentLoaded", function() {
           author.classList.add("hidden");
         });
   
-        // Dodavanje klase active za odgovarajući element sa fade efektom
         const currentSlide = document.getElementById(`slide-${index + 1}`);
         const currentComment = document.getElementById(`comment-${index + 1}`);
         const currentAuthor = document.getElementById(`author-info-${index + 1}`);
   
-        // Uklanjanje hidden klase i dodavanje active klase za vidljive elemente
         currentSlide.classList.remove("hidden");
         currentSlide.classList.add("active");
         currentComment.classList.remove("hidden");
@@ -111,7 +105,6 @@ document.addEventListener("DOMContentLoaded", function() {
         currentAuthor.classList.remove("hidden");
         currentAuthor.classList.add("active");
   
-        // Promena aktivnog stila u paginaciji
         paginationItems.forEach(item => item.classList.remove("active"));
         item.classList.add("active");
       });
@@ -125,13 +118,12 @@ function toggleMenu(event) {
 
   if (submenu.classList.contains('hidden')) {
     submenu.classList.remove('hidden');
-    submenu.style.maxHeight = submenu.scrollHeight + 'px';  // Otvori
-    icon.classList.add('flip'); // Flip ikonu
+    submenu.style.maxHeight = submenu.scrollHeight + 'px';  
+    icon.classList.add('flip'); 
   } else {
-    submenu.style.maxHeight = '0';  // Zatvori
-    icon.classList.remove('flip'); // Vrati ikonu u početnu poziciju
+    submenu.style.maxHeight = '0';  
+    icon.classList.remove('flip');
 
-    // Dodaj 'hidden' nakon što završi animacija
     setTimeout(() => {
       submenu.classList.add('hidden');
     }, 300);
@@ -141,27 +133,25 @@ function toggleMenu(event) {
 document.getElementById("mobileMenu-iconOpen").addEventListener("click", function() {
   const mobileMenu = document.getElementById("mobileMenu");
 
-  // Ukloni "hidden" i dodaj "open"
   mobileMenu.classList.remove("hidden");
   setTimeout(() => {
-    mobileMenu.classList.add("open");  // Kasniji delay kako bi tranzicija počela
-  }, 10);  // Daj malo vremena da se stilovi primene pre nego što se tranzicija pokrene
+    mobileMenu.classList.add("open"); 
+  }, 10);  
 
-  // Onemogući skrolovanje pozadine
   document.body.classList.add("no-scroll");
 });
 
 document.getElementById("mobileMenu-iconClose").addEventListener("click", function() {
   const mobileMenu = document.getElementById("mobileMenu");
 
-  // Ukloni klasu "open" i dodaj "hidden" nakon završetka tranzicije
+  
   mobileMenu.classList.remove("open");
   document.body.classList.remove("no-scroll");
 
-  // Sakrij meni nakon završene tranzicije
+ 
   setTimeout(function() {
     mobileMenu.classList.add("hidden");
-  }, 300);  // Oduzmi malo vremena pre nego što sakriješ meni (zbog tranzicije)
+  }, 300);  
 });
 
 const searchPopup = document.getElementById("searchPopup");
@@ -172,20 +162,20 @@ openBtn.addEventListener("click", function() {
   searchPopup.classList.remove("hidden");
   setTimeout(() => {
     searchPopup.classList.add("open");
-  }, 10); // Delay for proper animation start
+  }, 10); 
 
-  // Disable body scroll
-  document.body.style.overflow = "hidden";  // Isključite skrolovanje u pozadini
+  
+  document.body.style.overflow = "hidden";  
 });
 
 closeBtn.addEventListener("click", function() {
   searchPopup.classList.remove("open");
   setTimeout(() => {
     searchPopup.classList.add("hidden");
-  }, 300); // Time for transition to complete
+  }, 300); 
 
-  // Enable body scroll
-  document.body.style.overflow = "auto";  // Ponovo omogućite skrolovanje u pozadini
+  
+  document.body.style.overflow = "auto"; 
 });
 
 const dummyItems = [
@@ -210,28 +200,25 @@ const dummyItems = [
 function displaySearchResults(query) {
   const searchResultsDiv = document.getElementById('searchResults');
   
-  // Clear previous results if query is empty
+  
   if (query === '') {
     searchResultsDiv.innerHTML = '';
     return;
   }
 
-  // Filter results based on search query (case-insensitive)
+  
   const filteredResults = dummyItems.filter(item => item.name.toLowerCase().includes(query.toLowerCase()));
 
-  // Clear previous results
   searchResultsDiv.innerHTML = '';
 
-  // Add filtered results to the container
   filteredResults.forEach(item => {
     const a = document.createElement('a');
-    a.href = item.url;  // Link to the respective URL
+    a.href = item.url; 
     a.classList.add('p-5', 'w-full', 'border-b', 'border-[#333333]', 'bg-transparent', 'hover:bg-gray-500', 'hover:bg-opacity-20', 'text-gray-400', 'text-base', 'lg:text-[20px]', 'rounded', 'transition-all', 'duration-100');
     a.textContent = item.name;
     searchResultsDiv.appendChild(a);
   });
 
-  // If no results, show a 'No results' message
   if (filteredResults.length === 0) {
     const noResultsMessage = document.createElement('div');
     noResultsMessage.classList.add('py-2', 'text-white');
@@ -249,19 +236,16 @@ const selectMenus = document.querySelectorAll('#price-select-dropdown-menu, #ser
 selectMenus.forEach((menu) => {
   const icon = menu.nextElementSibling.querySelector('i');
 
-  // Rotiraj ikonicu na fokus
   menu.addEventListener('focus', () => {
     icon.style.transform = 'rotate(180deg)';
   });
 
-  // Vrati ikonicu u početni položaj na defokus
   menu.addEventListener('blur', () => {
     icon.style.transform = 'rotate(0deg)';
   });
 
-  // Ukloni fokus sa `select` nakon odabira opcije
   menu.addEventListener('change', () => {
-    menu.blur(); // Uklanja fokus sa `select`
+    menu.blur(); 
   });
 });
 
@@ -269,14 +253,14 @@ const searchInput = document.getElementById('searchInput-ulList');
 const listItems = document.querySelectorAll('#custom-scrollbar li');
 
 searchInput.addEventListener('input', function() {
-  const filter = searchInput.value.toLowerCase(); // Prebacivanje u mala slova za jednostavno pretragu
+  const filter = searchInput.value.toLowerCase(); 
 
   listItems.forEach(function(item) {
     const text = item.textContent || item.innerText;
     if (text.toLowerCase().includes(filter)) {
-      item.style.display = ''; // Prikazivanje stavke
+      item.style.display = '';
     } else {
-      item.style.display = 'none'; // Sakrivanje stavke
+      item.style.display = 'none';
     }
   });
 });
@@ -384,28 +368,25 @@ function shareWhatsapp() {
 }
 
 function toggleAccordion(index) {
-  // Get all accordion content, icons, and buttons
   const contents = document.querySelectorAll('.accordion-content');
   const icons = document.querySelectorAll('.fa-plus');
-  const buttons = document.querySelectorAll('.accordion-button'); // New: Get all buttons
+  const buttons = document.querySelectorAll('.accordion-button'); 
 
-  // Loop through and hide all of them, reset button text color
   contents.forEach((content, i) => {
     if (i !== index) {
       content.classList.add('max-h-0');
       content.classList.remove('max-h-[1000px]');
-      icons[i].classList.remove('rotate-45'); // Reset rotation
-      buttons[i].classList.remove('text-white'); // Reset text color for button
+      icons[i].classList.remove('rotate-45'); 
+      buttons[i].classList.remove('text-white'); 
     }
   });
 
-  // Toggle the clicked accordion item
   const content = contents[index];
   const icon = icons[index];
-  const button = buttons[index]; // Get the button for the clicked item
+  const button = buttons[index];
 
   content.classList.toggle('max-h-0');
-  content.classList.toggle('max-h-[1000px]'); // Expand content
-  icon.classList.toggle('rotate-45'); // Rotate icon when expanded
-  button.classList.toggle('text-white'); // Change text color to white when expanded
+  content.classList.toggle('max-h-[1000px]');
+  icon.classList.toggle('rotate-45');
+  button.classList.toggle('text-white'); 
 }
