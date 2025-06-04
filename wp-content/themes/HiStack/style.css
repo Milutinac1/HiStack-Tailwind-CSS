@@ -283,3 +283,8 @@ body.no-scroll {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+.elegant-red-long-conic-bg {
+  background: #FFFFFF;
+  background: radial-gradient(at left bottom, #FFFFFF, #FFD3D3);
+}

@@ -7,6 +7,14 @@
  * Contact: https://histack.rs/
  */
 
+window.addEventListener('load', () => {
+    const preloader = document.getElementById('preloader');
+    preloader.classList.add('opacity-0', 'pointer-events-none');
+    setTimeout(() => {
+      preloader.remove();
+    }, 500);
+});
+
 const hoverElements = document.querySelectorAll('.hoverElement');
 const overlay = document.getElementById('header-black-overlay-on-hover');
 const header = document.querySelector('header');
