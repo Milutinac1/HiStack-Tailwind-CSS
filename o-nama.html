@@ -665,19 +665,19 @@ PHP modules executed successfully.
               </p>
               <div class="py-4 px-5 md:px-0 border border-red-500 rounded-3xl bg-[#FEF7F8] flex flex-col md:flex-row gap-y-5 md:gap-y-0 text-left">
                 <div class="flex-1 md:px-5 lg:px-8 space-y-2">
-                  <span id="counter-day-1" class="text-[36px] lg:text-[40px] text-red-500 font-semibold leading-none">250+</span>
+                  <span id="counter-day-1" data-target="250" class="text-[36px] lg:text-[40px] text-red-500 font-semibold leading-none">0+</span>
                   <p class="text-base lg:text-[20px] text-gray-500 font-semibold leading-normal">
                     Uspešno završenih projekata širom sveta
                   </p>
                 </div>
                 <div class="flex-1 md:px-5 lg:px-8 space-y-2 py-5 md:py-0 border-l-0 border-r-0 md:border-l-[3px] md:border-r-[3px] border-t-[3px] border-b-[3px] md:border-t-0 md:border-b-0 border-white">
-                  <span id="counter-month-1" class="text-[36px] lg:text-[40px] text-red-500 font-semibold leading-none">98%</span>
+                  <span id="counter-month-1" data-target="98" class="text-[36px] lg:text-[40px] text-red-500 font-semibold leading-none">0%</span>
                   <p class="text-base lg:text-[20px] text-gray-500 font-semibold leading-normal">
                     Zadovoljstvo klijenata i pozitivne recenzije
                   </p>
                 </div>
                 <div class="flex-1 md:px-5 lg:px-8 space-y-2">
-                  <span id="counter-all-time-1" class="text-[36px] lg:text-[40px] text-red-500 font-semibold leading-none">5+ godina</span>
+                  <span id="counter-all-time-1" data-target="5" data-suffix="+ godina" class="text-[36px] lg:text-[40px] text-red-500 font-semibold leading-none">0+ godina</span>
                   <p class="text-base lg:text-[20px] text-gray-500 font-semibold leading-normal">
                     Iskustva u digitalnim tehnologijama
                   </p>
@@ -690,17 +690,17 @@ PHP modules executed successfully.
               </p>
               <div class="py-4 px-5 md:px-0 border border-red-500 rounded-3xl bg-[#FEF7F8] flex flex-col md:flex-row gap-y-5 md:gap-y-0 text-left">
                 <div class="flex-1 md:px-5 lg:px-8 space-y-2">
-                  <span id="counter-day-2" class="text-[36px] lg:text-[40px] text-red-500 font-semibold leading-none">6</span>
+                  <span id="counter-day-2" data-target="6" class="text-[36px] lg:text-[40px] text-red-500 font-semibold leading-none">0</span>
                   <p class="text-base lg:text-[20px] text-gray-500 font-semibold leading-normal">Osvojenih prestižnih nagrada u industriji
                   </p>
                 </div>
                 <div class="flex-1 md:px-5 lg:px-8 space-y-2 py-5 md:py-0 border-l-0 border-r-0 md:border-l-[3px] md:border-r-[3px] border-t-[3px] border-b-[3px] md:border-t-0 md:border-b-0 border-white">
-                  <span id="counter-month-2" class="text-[36px] lg:text-[40px] text-red-500 font-semibold leading-none">3x brži rast</span>
+                  <span id="counter-month-2" data-target="3" data-suffix="x brži rast" class="text-[36px] lg:text-[40px] text-red-500 font-semibold leading-none">0x brži rast</span>
                   <p class="text-base lg:text-[20px] text-gray-500 font-semibold leading-normal">Od prosečne stope rasta IT sektora u regionu
                   </p>
                 </div>
                 <div class="flex-1 md:px-5 lg:px-8 space-y-2">
-                  <span id="counter-all-time-2" class="text-[36px] lg:text-[40px] text-red-500 font-semibold leading-none">300%</span>
+                  <span id="counter-all-time-2" data-target="300" class="text-[36px] lg:text-[40px] text-red-500 font-semibold leading-none">0%</span>
                   <p class="text-base lg:text-[20px] text-gray-500 font-semibold leading-normal">Prosečan rast performansi klijenata nakon saradnje
                   </p>
                 </div>
@@ -1175,6 +1175,7 @@ PHP modules executed successfully.
 
     <!-- Custom JS -->
     <script src="wp-content/themes/HiStack/main.js"></script>
+    <script src="wp-content/themes/HiStack/assets/counter-up.js"></script>
     <script src="//code.tidio.co/hkqppawvp13pvdfon2nsfzu5xr72b2yw.js"></script>
     <!-- Default Statcounter code for HiStack https://www.histack.rs -->
     <script type="text/javascript">
