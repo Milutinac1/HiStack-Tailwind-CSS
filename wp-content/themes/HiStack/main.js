@@ -205,7 +205,8 @@ const dummyItems = [
   { name: "HiStack vodič: Marketing", url: "vodic-za-marketing.html" },
   { name: "HiStack vodič: Dizajn", url: "vodic-za-dizajn.html" },
   { name: "HiStack vodič: Uputstvo za saradnju", url: "uputstvo-za-saradnju.html" },
-  { name: "HiStack vodič: Priprema materijala", url: "priprema-materijala.html" }
+  { name: "HiStack vodič: Priprema materijala", url: "priprema-materijala.html" },
+  { name: "Vodič za korišćenje platforme", url: "vodic-za-koriscenje-platforme.html" }
 ];
 
 function displaySearchResults(query) {
