@@ -53,12 +53,12 @@ var swiper = new Swiper(".multiple-slide-carousel", {
     },
     breakpoints: {
       320: {
-        slidesPerView: 1.15,
-        spaceBetween: 10
+        slidesPerView: 1.05,
+        spaceBetween: 0
       },
       768: {
-        slidesPerView: 1.2,
-        spaceBetween: 20
+        slidesPerView: 1.15,
+        spaceBetween: 0
       },
       1280: {
         slidesPerView: 1.7,
