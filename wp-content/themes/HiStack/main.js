@@ -7,6 +7,7 @@
  * Contact: https://histack.rs/
  */
 
+
 window.addEventListener('load', () => {
     const preloader = document.getElementById('preloader');
     if (!preloader) return;
@@ -16,6 +17,32 @@ window.addEventListener('load', () => {
     setTimeout(() => {
       preloader.remove();
     }, 500);
+});
+
+window.addEventListener('DOMContentLoaded', () => {
+  const hash = window.location.hash.substring(1);
+  if (hash) {
+    const el = document.getElementById(hash);
+    if (el) {
+      el.scrollIntoView();
+      history.replaceState(null, '', window.location.pathname + window.location.search);
+    }
+  }
+});
+
+document.addEventListener('click', function(e) {
+  const target = e.target.closest('a');
+  if (!target) return;
+
+  const href = target.getAttribute('href');
+  if (!href || !href.startsWith('#')) return;
+
+  const id = href.substring(1);
+  if (!document.getElementById(id)) return;
+
+  setTimeout(() => {
+    history.replaceState(null, '', window.location.pathname + window.location.search);
+  }, 10);
 });
 
 const hoverElements = document.querySelectorAll('.hoverElement');
@@ -173,23 +200,19 @@ openBtn.addEventListener("click", function() {
   searchPopup.classList.remove("hidden");
   setTimeout(() => {
     searchPopup.classList.add("open");
-  }, 10); 
-
-  
-  document.body.style.overflow = "hidden";  
+  }, 10);
+  document.body.style.overflow = "hidden";
 });
 
 closeBtn.addEventListener("click", function() {
   searchPopup.classList.remove("open");
   setTimeout(() => {
     searchPopup.classList.add("hidden");
-  }, 300); 
-
-  
-  document.body.style.overflow = "auto"; 
+  }, 300);
+  document.body.style.overflow = "auto";
 });
 
-const dummyItems = [
+const dummyItemsSR = [
   { name: "Naše usluge", url: "nase-usluge.html" },
   { name: "Cene i paketi", url: "cene-i-paketi.html" },
   { name: "O nama", url: "o-nama.html" },
@@ -206,26 +229,56 @@ const dummyItems = [
   { name: "HiStack vodič: Dizajn", url: "vodic-za-dizajn.html" },
   { name: "HiStack vodič: Uputstvo za saradnju", url: "uputstvo-za-saradnju.html" },
   { name: "HiStack vodič: Priprema materijala", url: "priprema-materijala.html" },
-  { name: "Vodič za korišćenje platforme", url: "vodic-za-koriscenje-platforme.html" }
+  { name: "Vodič za korišćenje platforme", url: "vodic-za-koriscenje-platforme.html" },
+  { name: "Web dizajn i razvoj", url: "web-dizajn-razvoj.html" },
+  { name: "Wordpress razvoj", url: "wordpress-razvoj.html" },
+  { name: "E-Commerce rešenja", url: "e-commerce-resenja.html" },
+  { name: "SEO & SMM: Digitalni marketing", url: "seo-digitalni-marketing.html" }
 ];
+
+const dummyItemsEN = [
+  { name: "Our services", url: "our-services.html" },
+  { name: "Prices and packages", url: "prices-and-packages.html" },
+  { name: "About us", url: "about-us.html" },
+  { name: "Our projects", url: "our-projects.html" },
+  { name: "Support center", url: "support.html" },
+  { name: "Blog", url: "blog.html" },
+  { name: "Contact", url: "contact.html" },
+  { name: "Terms of use", url: "terms-of-use.html" },
+  { name: "Privacy policy", url: "privacy-policy.html" },
+  { name: "Cookies", url: "cookies.html" },
+  { name: "Legal information", url: "legal-information.html" },
+  { name: "HiStack foundation", url: "histack-foundation.html" },
+  { name: "HiStack guide: Marketing", url: "marketing-guide.html" },
+  { name: "HiStack guide: Design", url: "design-guide.html" },
+  { name: "HiStack guide: Cooperation instructions", url: "collaboration-guide.html" },
+  { name: "HiStack guide: Material preparation", url: "preparing-materials.html" },
+  { name: "Platform user guide", url: "platform-user-guide.html" },
+  { name: "Web design & development", url: "web-design-development.html" },
+  { name: "WordPress development", url: "wordpress-development.html" },
+  { name: "E-Commerce solutions", url: "ecommerce-solutions.html" },
+  { name: "SEO & digital marketing", url: "seo-digital-marketing.html" }
+];
+
+const isEnglish = window.location.pathname.startsWith('/en/');
+
+const dummyItems = isEnglish ? dummyItemsEN : dummyItemsSR;
 
 function displaySearchResults(query) {
   const searchResultsDiv = document.getElementById('searchResults');
-  
   
   if (query === '') {
     searchResultsDiv.innerHTML = '';
     return;
   }
 
-  
   const filteredResults = dummyItems.filter(item => item.name.toLowerCase().includes(query.toLowerCase()));
 
   searchResultsDiv.innerHTML = '';
 
   filteredResults.forEach(item => {
     const a = document.createElement('a');
-    a.href = item.url; 
+    a.href = isEnglish ? '/en/' + item.url : item.url;
     a.classList.add('p-5', 'w-full', 'border-b', 'border-[#333333]', 'bg-transparent', 'hover:bg-gray-500', 'hover:bg-opacity-20', 'text-gray-400', 'text-base', 'lg:text-[20px]', 'rounded', 'transition-all', 'duration-100');
     a.textContent = item.name;
     searchResultsDiv.appendChild(a);
@@ -234,7 +287,7 @@ function displaySearchResults(query) {
   if (filteredResults.length === 0) {
     const noResultsMessage = document.createElement('div');
     noResultsMessage.classList.add('py-2', 'text-white');
-    noResultsMessage.textContent = 'Nema rezultata';
+    noResultsMessage.textContent = isEnglish ? 'No results found' : 'Nema rezultata';
     searchResultsDiv.appendChild(noResultsMessage);
   }
 }
