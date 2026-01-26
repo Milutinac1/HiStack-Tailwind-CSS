@@ -293,3 +293,13 @@ body.no-scroll {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+@media (max-width: 900px) {
+  .multiple-slide-carousel-2 {
+    cursor: grab;
+  }
+
+  .multiple-slide-carousel-2:active {
+    cursor: grabbing;
+  }
+}

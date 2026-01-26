@@ -71,7 +71,7 @@ hoverElements.forEach(el => {
 document.getElementById("year").textContent = new Date().getFullYear();
 
 var swiper = new Swiper(".multiple-slide-carousel", {
-    loop: true,
+    loop: false,
     slidesPerView: 1,
     spaceBetween: 10,
     navigation: {
@@ -93,6 +93,24 @@ var swiper = new Swiper(".multiple-slide-carousel", {
       }
     }
 });
+
+var swiper2 = new Swiper(".multiple-slide-carousel-2", {
+    loop: false,
+    slidesPerView: 1,
+    spaceBetween: 10, 
+    navigation: {
+      nextEl: ".multiple-slide-carousel-2 .swiper-button-next",
+      prevEl: ".multiple-slide-carousel-2 .swiper-button-prev",
+    },
+    breakpoints: {
+      320: { slidesPerView: 1.15, spaceBetween: 10 },
+      650: { slidesPerView: 1.5, spaceBetween: 20 },
+      900: { slidesPerView: 2, spaceBetween: 10 },
+      1280: { slidesPerView: 2, spaceBetween: 15 },
+      1535: { slidesPerView: 2, spaceBetween: 30 }
+    }
+});
+
 
 var mybutton = document.getElementById("scroll-to-top-button");
 
