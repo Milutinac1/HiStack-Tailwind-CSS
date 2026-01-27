@@ -303,3 +303,43 @@ body.no-scroll {
     cursor: grabbing;
   }
 }
+
+.hero-video {
+  clip-path: polygon(
+    20% 100%,
+    100% 100%,
+    100% 0%,
+    0% 0%
+  );
+}
+
+.overlay-red {
+  background-color: rgba(237, 26, 59, 0.1);
+  mix-blend-mode: multiply;
+  clip-path: polygon(
+    20% 100%,
+    100% 100%,
+    100% 0%,
+    0% 0%
+  );
+}
+
+.triangle-one {
+  background-color: rgba(237, 26, 59, 0.2);
+  clip-path: polygon(
+    100% 45%,
+    100% 100%,
+    48% 100%
+  );
+}
+
+.polygon-five {
+  background-color: rgba(237, 26, 59, 0.1);
+  clip-path: polygon(
+    60% 0%,
+    100% 0%,
+    100% 100%,
+    62% 100%,
+    43% 20%
+  );
+}
