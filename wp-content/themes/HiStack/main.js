@@ -83,7 +83,7 @@ var swiper = new Swiper(".multiple-slide-carousel", {
     },
     breakpoints: {
       320: {
-        slidesPerView: 1.05,
+        slidesPerView: 0.7,
         spaceBetween: 0
       },
       768: {
