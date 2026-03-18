@@ -343,3 +343,36 @@ body.no-scroll {
     43% 20%
   );
 }
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+  40% { transform: translateY(-15px); }
+  60% { transform: translateY(-10px); }
+}
+.animate-bounce-arrow {
+  animation: bounce 1.7s infinite ease-in-out;
+}
+
+.expo-gradient {
+  background-color: hsla(173, 77%, 83%, 1);
+    background-image: radial-gradient(circle at 7% 81%, hsla(104.5588235294118, 91%, 91%, 1) 16%, transparent 53%), radial-gradient(circle at 11% 29%, hsla(213, 97%, 75%, 1) 8%, transparent 74%), radial-gradient(circle at 21% 14%, hsla(149, 93%, 64%, 1) 14.288924492243542%, transparent 68%), radial-gradient(circle at 90% 50%, hsla(118, 94%, 89%, 1) 2%, transparent 85%), radial-gradient(circle at 5% 1%, hsla(250, 76%, 61%, 1) 7%, transparent 84%);
+    background-blend-mode: normal, normal, normal, normal, normal;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+.expo-gradient-2 {
+  background: linear-gradient(
+    to right,
+    #f68c01,
+    #FFBB49,
+    #6D9C10,
+    #6BCBDA,
+    #FD7F93
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
