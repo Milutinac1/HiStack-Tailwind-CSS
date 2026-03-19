@@ -480,3 +480,17 @@ function toggleAccordion(index) {
   icon.classList.toggle('rotate-45');
   button.classList.toggle('text-white'); 
 }
+
+
+document.addEventListener("DOMContentLoaded", function() {
+  const lazyBg = document.querySelectorAll('[data-bg]');
+  const observer = new IntersectionObserver((entries, obs) => {
+    entries.forEach(entry => {
+      if(entry.isIntersecting){
+        entry.target.style.backgroundImage = entry.target.dataset.bg;
+        obs.unobserve(entry.target);
+      }
+    });
+  });
+  lazyBg.forEach(el => observer.observe(el));
+});
