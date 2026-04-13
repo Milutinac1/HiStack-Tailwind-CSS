@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+<!-- ===================== HOME ===================== -->
+
+<url>
+  <loc>https://www.histack.rs/</loc>
+  <lastmod>2026-04-13T15:03:23+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+
+<url>
+  <loc>https://www.histack.rs/en/</loc>
+  <lastmod>2026-04-13T15:03:23+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+
+<!-- ===================== CORE PAGES ===================== -->
+
+<url>
+  <loc>https://www.histack.rs/nase-usluge</loc>
+  <priority>0.90</priority>
+</url>
+
+<url>
+  <loc>https://www.histack.rs/o-nama</loc>
+  <priority>0.90</priority>
+</url>
+
+<url>
+  <loc>https://www.histack.rs/nasi-projekti</loc>
+  <priority>0.90</priority>
+</url>
+
+<url>
+  <loc>https://www.histack.rs/cene-i-paketi</loc>
+  <priority>0.85</priority>
+</url>
+
+<!-- CONTACT (bitan ali ne core SEO) -->
+<url>
+  <loc>https://www.histack.rs/kontakt</loc>
+  <priority>0.80</priority>
+</url>
+
+<!-- ===================== SERVICES (INDIVIDUAL) ===================== -->
+
+<url>
+  <loc>https://www.histack.rs/web-dizajn-razvoj</loc>
+  <priority>0.70</priority>
+</url>
+
+<url>
+  <loc>https://www.histack.rs/wordpress-razvoj</loc>
+  <priority>0.70</priority>
+</url>
+
+<url>
+  <loc>https://www.histack.rs/e-commerce-resenja</loc>
+  <priority>0.70</priority>
+</url>
+
+<url>
+  <loc>https://www.histack.rs/seo-digitalni-marketing</loc>
+  <priority>0.70</priority>
+</url>
+
+<!-- ===================== PROJECTS (INDIVIDUAL) ===================== -->
+
+<url>
+  <loc>https://www.histack.rs/glas-kosova</loc>
+  <priority>0.70</priority>
+</url>
+
+<url>
+  <loc>https://www.histack.rs/aca-japanac</loc>
+  <priority>0.70</priority>
+</url>
+
+<url>
+  <loc>https://www.histack.rs/alm-pellets</loc>
+  <priority>0.70</priority>
+</url>
+
+<url>
+  <loc>https://www.histack.rs/nirvana</loc>
+  <priority>0.70</priority>
+</url>
+
+<!-- ===================== SUPPORT / BLOG ===================== -->
+
+<url>
+  <loc>https://www.histack.rs/pomoc</loc>
+  <priority>0.30</priority>
+</url>
+
+<url>
+  <loc>https://www.histack.rs/blog</loc>
+  <priority>0.30</priority>
+</url>
+
+<!-- ===================== SPECIAL PAGES ===================== -->
+
+<url>
+  <loc>https://www.histack.rs/histack-fondacija</loc>
+  <priority>0.80</priority>
+</url>
+
+<url>
+  <loc>https://www.histack.rs/expo-2027-belgrade</loc>
+  <priority>0.85</priority>
+</url>
+
+<!-- ===================== EN VERSION ===================== -->
+
+<url>
+  <loc>https://www.histack.rs/en/our-services</loc>
+  <priority>0.90</priority>
+</url>
+
+<url>
+  <loc>https://www.histack.rs/en/about-us</loc>
+  <priority>0.90</priority>
+</url>
+
+<url>
+  <loc>https://www.histack.rs/en/our-projects</loc>
+  <priority>0.90</priority>
+</url>
+
+<url>
+  <loc>https://www.histack.rs/en/pricing-and-packages</loc>
+  <priority>0.85</priority>
+</url>
+
+<url>
+  <loc>https://www.histack.rs/en/contact</loc>
+  <priority>0.80</priority>
+</url>
+
+<!-- EN SERVICES -->
+<url>
+  <loc>https://www.histack.rs/en/web-design-development</loc>
+  <priority>0.70</priority>
+</url>
+
+<url>
+  <loc>https://www.histack.rs/en/wordpress-development</loc>
+  <priority>0.70</priority>
+</url>
+
+<url>
+  <loc>https://www.histack.rs/en/ecommerce-solutions</loc>
+  <priority>0.70</priority>
+</url>
+
+<url>
+  <loc>https://www.histack.rs/en/seo-digital-marketing</loc>
+  <priority>0.70</priority>
+</url>
+
+<!-- EN PROJECTS -->
+<url>
+  <loc>https://www.histack.rs/en/voice-of-kosovo</loc>
+  <priority>0.70</priority>
+</url>
+
+<url>
+  <loc>https://www.histack.rs/en/jpn-motorworks</loc>
+  <priority>0.70</priority>
+</url>
+
+<url>
+  <loc>https://www.histack.rs/en/alm-pellets</loc>
+  <priority>0.70</priority>
+</url>
+
+<url>
+  <loc>https://www.histack.rs/en/nirvana</loc>
+  <priority>0.70</priority>
+</url>
+
+<!-- SUPPORT EN -->
+<url>
+  <loc>https://www.histack.rs/en/support</loc>
+  <priority>0.30</priority>
+</url>
+
+<url>
+  <loc>https://www.histack.rs/en/blog</loc>
+  <priority>0.30</priority>
+</url>
+
+<url>
+  <loc>https://www.histack.rs/en/histack-foundation</loc>
+  <priority>0.80</priority>
+</url>
+
+<url>
+  <loc>https://www.histack.rs/en/expo-2027-belgrade</loc>
+  <priority>0.85</priority>
+</url>
+
+</urlset>
