@@ -1,23 +1,22 @@
 function animateCounter(el) {
   const target = parseInt(el.getAttribute('data-target'), 10);
+  const prefix = el.getAttribute('data-prefix') || '';
   const suffix = el.getAttribute('data-suffix') || el.textContent.replace(/[0-9]/g, '');
   const duration = 2000;
   const frameDuration = 1000 / 60;
   const totalFrames = Math.round(duration / frameDuration);
   let frame = 0;
 
-  const countTo = target;
-
   const counter = setInterval(() => {
     frame++;
-    const progress = frame / totalFrames;
-    const currentCount = Math.round(countTo * progress);
+
+    const progress = Math.min(frame / totalFrames, 1);
+    const currentCount = Math.round(target * progress);
+
+    el.textContent = `${prefix}${currentCount}${suffix}`;
 
     if (progress >= 1) {
       clearInterval(counter);
-      el.textContent = `${target}${suffix}`;
-    } else {
-      el.textContent = `${currentCount}${suffix}`;
     }
   }, frameDuration);
 }

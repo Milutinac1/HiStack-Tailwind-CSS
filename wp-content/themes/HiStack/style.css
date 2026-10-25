@@ -41,6 +41,47 @@ html {
   scroll-behavior: smooth;
 }
 
+
+/* Primary Red Color */
+
+.text-primary-red {
+  color: #ed1a3b;
+}
+
+.border-primary-red {
+  border-color: #ed1a3b;
+}
+
+.bg-primary-red {
+  background-color: #ed1a3b;
+}
+
+
+/* Secodnary Red Color */
+
+.text-secondary-red {
+  color: #d81535;
+}
+
+.border-secondary-red {
+  border-color: #D81534;
+}
+
+.bg-secondary-red {
+  background-color: #D81534;
+}
+
+
+/* Mobile menu accordions (native <details>, no JS needed) */
+  .nav-acc > summary { list-style: none; }
+  .nav-acc > summary::-webkit-details-marker { display: none; }
+  .nav-acc[open] > .nav-acc-body { animation: navAccIn .2s ease-out; }
+  @keyframes navAccIn { from { opacity: 0; transform: translateY(-4px); } to { opacity: 1; transform: none; } }
+  @media (prefers-reduced-motion: reduce) { .nav-acc[open] > .nav-acc-body { animation: none; } }
+
+
+/* Marquee Animation */
+
 @keyframes marquee {
     0% {
       transform: translateX(-100%);
@@ -135,27 +176,32 @@ html {
   }
 }
 
-#scroll-to-top-button {
-  transition: opacity 0.3s ease-in-out;
-}
+/* Positioned with safe-area insets so it clears the iPhone home indicator */
+      #scroll-to-top-button {
+        bottom: calc(1.25rem + env(safe-area-inset-bottom, 0px));
+        right: calc(1.25rem + env(safe-area-inset-right, 0px));
+        opacity: 0;
+        visibility: hidden; /* also removes it from keyboard focus while hidden */
+        transform: translateY(12px) scale(0.9);
+        transition: opacity .25s ease, transform .25s ease, background-color .2s ease, visibility 0s linear .25s;
+      }
+      #scroll-to-top-button.is-visible {
+        opacity: 1;
+        visibility: visible;
+        transform: none;
+        transition-delay: 0s;
+      }
+      /* Hover only on devices that can really hover (mouse/trackpad), so it never "sticks" after a tap on touch screens */
+      @media (hover: hover) and (pointer: fine) {
+        #scroll-to-top-button:hover { background-color: #333333; }
+      }
+      /* Brief press feedback that releases as soon as the finger lifts */
+      #scroll-to-top-button:active { transform: scale(0.94); }
+      #scroll-to-top-button .stt-progress { transition: stroke-dashoffset .1s linear; }
+      @media (prefers-reduced-motion: reduce) {
+        #scroll-to-top-button, #scroll-to-top-button .stt-progress { transition: none; }
+      }
 
-.active div.line {
-  width: 10rem;
-  background-color: white !important;
-  transition: width 200ms ease;
-}
-
-.line {
-  width: 3rem;
-  height: 3px;
-  background-color: rgba(255, 255, 255, 0.5);
-  transition: all 200ms ease;
-}
-
-#pagination li:hover {
-  cursor: pointer;
-  color: white;
-}
 
 .fade {
   opacity: 0;
@@ -202,6 +248,7 @@ body.no-scroll {
 
 #mobileMenu {
   height: 100vh;
+  height: 100dvh;
   overflow-y: auto;
 }
 
@@ -222,6 +269,9 @@ body.no-scroll {
   min-height: 150px!important;
 }
 
+
+/* Custom scrollbar for Link summary overlays at Policies */
+
 #custom-scrollbar {
   scrollbar-width: thin;
   scrollbar-color: #f87171 #f4f4f4;
@@ -240,6 +290,9 @@ body.no-scroll {
   border-radius: 4px;
   border: 2px solid #f4f4f4;
 }
+
+
+/* Marquee animations */
 
 @keyframes marquee {
   0% { transform: translateX(0); }
@@ -263,9 +316,15 @@ body.no-scroll {
   animation: marquee-reverse 250s linear infinite;
 }
 
+
+/* Overlay width for packages on Pricing page */
+
 #paket-1-overlay, #paket-2-overlay, #paket-3-overlay, #paket-4-overlay, #paket-5-overlay, #paket-6-overlay, #paket-7-overlay, #paket-8-overlay, #paket-9-overlay {
   width: 95%;
 }
+
+
+/* Conic Backgrounds */
 
 .elegant-red-conic-bg {
   background: conic-gradient(from 315deg, #FFD8D5, #FFFFFF);
@@ -294,6 +353,9 @@ body.no-scroll {
   background-size: cover;
 }
 
+
+/* Multiple slide carousel 2 */
+
 @media (max-width: 900px) {
   .multiple-slide-carousel-2 {
     cursor: grab;
@@ -303,6 +365,9 @@ body.no-scroll {
     cursor: grabbing;
   }
 }
+
+
+/* Polygon design for Hero section on main page */
 
 .hero-video {
   clip-path: polygon(
@@ -344,6 +409,9 @@ body.no-scroll {
   );
 }
 
+
+/* Bounce animation for arrow-down in Hero section on EXPO page */
+
 @keyframes bounce {
   0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
   40% { transform: translateY(-15px); }
@@ -352,6 +420,9 @@ body.no-scroll {
 .animate-bounce-arrow {
   animation: bounce 1.7s infinite ease-in-out;
 }
+
+
+/* EXPO 2027 Background Gradients */
 
 .expo-gradient {
   background-color: hsla(173, 77%, 83%, 1);
@@ -376,3 +447,195 @@ body.no-scroll {
   background-clip: text;
   color: transparent;
 }
+
+
+/* Rounded Class for Header Lang flags */
+
+.rounded-minimal {
+  border-radius: 0.15rem;
+}
+
+
+/* Slider stays inside .container (perfect alignment); the section clips at the screen edge */
+  .portfolio-section .portfolio-swiper { overflow: visible; }
+  .portfolio-section .swiper-slide { height: auto; }
+
+  /* Arrow buttons: hover/active/transition live here (not in Tailwind classes) so they work with any Tailwind build */
+  .portfolio-nav { transition: background-color .3s ease, color .3s ease, border-color .3s ease, box-shadow .3s ease, transform .15s ease; }
+  .portfolio-nav:not(.swiper-button-disabled):hover { background: #D81534; border-color: #D81534; color: #fff; }
+  .portfolio-nav:not(.swiper-button-disabled):active { transform: scale(.95); }
+  @media (prefers-reduced-motion: reduce) { .portfolio-nav { transition: none; } }
+
+  /* Arrow buttons: Swiper toggles these classes */
+  .portfolio-nav.swiper-button-disabled { border-color: #D1D5DB; color: #d1d5db; background: transparent; pointer-events: none; }
+  .portfolio-nav.swiper-button-lock,
+  .portfolio-scrollbar.swiper-scrollbar-lock { display: none; }
+
+  /* Draggable progress bar (20px tall hit area, 4px visible line) */
+  .portfolio-scrollbar { position: relative; height: 20px; touch-action: none; cursor: pointer; }
+  .portfolio-scrollbar::before { content: ""; position: absolute; left: 0; right: 0; top: 50%; height: 4px; margin-top: -2px; border-radius: 9999px; background: #e5e7eb; }
+  .portfolio-scrollbar .swiper-scrollbar-drag { position: absolute; left: 0; top: 50%; height: 4px; margin-top: -2px; border-radius: 9999px; background: #D81534; cursor: grab; }
+
+
+/* Shared image ratio used ONLY between md and lg (featured card + last card). Set it to the photo's real ratio (e.g. 4 / 3) for zero cropping. */
+          .media-section { --media-ratio: 1 / 1; }
+
+          /* Make links and highlighted spans inside headings inherit the heading's size/weight/line-height */
+          .media-section h3 a,
+          .media-section h3 span { font: inherit; }
+          .media-section h3 a { color: inherit; }
+
+          /* One link per card: the title link stretches over the whole card */
+          .media-card h3 a::after { content: ""; position: absolute; inset: 0; border-radius: 1.5rem; }
+          .media-card h3 a:focus-visible { outline: none; }
+          .media-card h3 a:focus-visible::after { box-shadow: 0 0 0 2px #D81534; }
+
+          .media-card .media-img { transition: transform .5s ease; }
+          .media-card:hover .media-img { transform: scale(1.03); }
+          .media-card .media-title { transition: color .3s ease; }
+          .media-card:hover .media-title { color: #D81534; }
+          .media-card .media-more i { transition: transform .3s ease; }
+          .media-card:hover .media-more i { transform: translateX(2px); }
+
+          /* md to lg only: featured and last card use the same image ratio and crop */
+          @media (min-width: 768px) and (max-width: 1023.98px) {
+            .media-section .media-feature-img,
+            .media-section .media-last-img { aspect-ratio: var(--media-ratio); object-fit: cover; }
+          }
+
+          @media (prefers-reduced-motion: reduce) {
+            .media-card, .media-card * { transition: none !important; }
+            .media-card:hover .media-img, .media-card:hover .media-more i { transform: none; }
+          }
+
+
+#slider-container {
+    --tst-ease: cubic-bezier(.22, 1, .36, 1);
+    --tst-time: 650ms;
+    /* Softened brand gradient: deeper crimson -> muted red -> warm terracotta, plus a faint highlight */
+    background:
+      radial-gradient(ellipse 60% 70% at 88% 8%, rgba(255, 255, 255, .10), transparent 70%),
+      linear-gradient(146deg, rgba(177,13,40,1) 40%, rgba(255,28,64,1) 77%, rgba(245,129,32,1) 100%);
+  }
+
+  /* Stacked grid: every layer shares one cell, so the box height never changes */
+  #slider-container .tst-stack,
+  #slider-container .tst-stage { display: grid; }
+  #slider-container .tst-stack > .tst-item { grid-area: 1 / 1; }
+
+  /* Text + author crossfade */
+  #slider-container .tst-item {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(14px);
+    transition: opacity 400ms ease, transform var(--tst-time) var(--tst-ease), visibility 0s linear 400ms;
+  }
+  #slider-container .tst-item.is-active {
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+    transition: opacity 500ms ease 150ms, transform var(--tst-time) var(--tst-ease) 150ms, visibility 0s;
+  }
+
+  /* Images – mobile: same look as before (single image, pulled up over the edge) */
+  #slider-container .tst-img {
+    grid-area: 1 / 1;
+    justify-self: start;
+    height: 180px;            /* fixed height from 0px up to the lg breakpoint */
+    width: auto;              /* width follows from the ratio, so it never grows with the viewport */
+    max-width: 100%;
+    margin-top: -3.5rem;      /* fixed pull-up: stays inside the section's 3rem top padding + container padding */
+    object-fit: cover;
+    border-radius: 1rem;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 500ms ease;
+  }
+  #slider-container .tst-img.is-active { opacity: 1; z-index: 10; pointer-events: auto; }
+
+  /* Author */
+  #slider-container .tst-author { position: relative; padding-top: 1.5rem; }
+  #slider-container .tst-author::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, rgba(255, 255, 255, .45), rgba(255, 255, 255, 0));
+  }
+  #slider-container .tst-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    min-width: 3.5rem;
+    height: 3.5rem;
+    padding: 0 1rem;
+    border-radius: .875rem;
+    border: 1px solid rgba(255, 255, 255, 0.359);
+    -webkit-backdrop-filter: blur(6px);
+    backdrop-filter: blur(6px);
+  }
+  #slider-container .tst-logo img { max-width: 7rem; object-fit: contain; }
+  #slider-container .tst-name { line-height: 1.2; letter-spacing: -.01em; }
+  #slider-container .tst-role { line-height: 1.35; margin-top: .25rem; letter-spacing: .01em; }
+
+  /* Pagination */
+  #slider-container .tst-page {
+    position: relative;
+    color: inherit;
+    background: none;
+    border: 0;
+    padding: 0;
+    cursor: pointer;
+    opacity: .7;
+    transition: opacity 200ms ease;
+  }
+  #slider-container .tst-page:hover,
+  #slider-container .tst-page:focus-visible,
+  #slider-container .is-active > .tst-page { opacity: 1; }
+  #slider-container .tst-page:focus-visible { outline: 2px solid #fff; outline-offset: 6px; border-radius: 2px; }
+  #slider-container .line {
+    display: block;
+    width: 3rem;
+    height: 3px;
+    background-color: rgba(255, 255, 255, 0.5);
+    transition: width var(--tst-time) var(--tst-ease), background-color 300ms ease;
+  }
+  #slider-container .is-active .line { width: 10rem; background-color: #fff; }
+
+  /* Desktop: overlapping, layered carousel */
+  @media (min-width: 1024px) {
+    #slider-container .tst-layout { column-gap: 4.5rem; }
+    #slider-container .tst-stage { justify-items: center; align-items: center; }
+    #slider-container .tst-img {
+      justify-self: center;
+      height: auto;
+      width: 56%;
+      max-height: 370px;
+      aspect-ratio: 4 / 5;
+      margin-top: 0;
+      opacity: 1;               /* inactive images stay fully opaque */
+      filter: brightness(.85);  /* slight shade only; remove this line for no dimming at all */
+      box-shadow: 0 10px 30px -10px rgba(0, 0, 0, .5);
+      pointer-events: auto;
+      cursor: pointer;
+      will-change: transform;
+      transition: transform var(--tst-time) var(--tst-ease),
+                  opacity var(--tst-time) ease,
+                  filter var(--tst-time) ease,
+                  box-shadow var(--tst-time) ease;
+    }
+    #slider-container .tst-img[data-pos="prev"] { transform: translateX(-46%) scale(.82); z-index: 1; }
+    #slider-container .tst-img[data-pos="next"] { transform: translateX(46%) scale(.82); z-index: 1; }
+    #slider-container .tst-img.is-active {
+      transform: translateX(0) scale(1);
+      filter: none;
+      z-index: 3;
+      cursor: default;
+      box-shadow: 0 24px 50px -12px rgba(0, 0, 0, .45);
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    #slider-container * { transition-duration: 1ms !important; transition-delay: 0s !important; }
+  }

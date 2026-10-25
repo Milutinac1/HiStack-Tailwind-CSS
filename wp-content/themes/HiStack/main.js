@@ -19,6 +19,50 @@ window.addEventListener('load', () => {
     }, 500);
 });
 
+
+(function () {
+    var closeLang = function () {
+      document.querySelectorAll('.lang-switcher[open]').forEach(function (d) { d.removeAttribute('open'); });
+    };
+    document.addEventListener('click', function (e) {
+      document.querySelectorAll('.lang-switcher[open]').forEach(function (d) {
+        if (!d.contains(e.target)) d.removeAttribute('open');
+      });
+    });
+    document.addEventListener('keydown', function (e) { if (e.key === 'Escape') closeLang(); });
+    var closeBtn = document.getElementById('mobileMenu-iconClose');
+    if (closeBtn) closeBtn.addEventListener('click', closeLang);
+  })();
+
+
+const mobileBackdrop = document.getElementById("mobileMenu-backdrop");
+
+document.getElementById("mobileMenu-iconOpen").addEventListener("click", function () {
+  mobileBackdrop.classList.remove("hidden");
+});
+
+document.getElementById("mobileMenu-iconClose").addEventListener("click", function () {
+  setTimeout(() => mobileBackdrop.classList.add("hidden"), 300);
+});
+
+mobileBackdrop.addEventListener("click", function () {
+  document.getElementById("mobileMenu-iconClose").click();
+});
+
+
+// Closes the menu on outside tap or Escape (put once, near end of body)
+document.addEventListener('click', e => {
+  document.querySelectorAll('.lang-switcher[open]').forEach(d => {
+    if (!d.contains(e.target)) d.removeAttribute('open');
+  });
+});
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape') {
+    document.querySelectorAll('.lang-switcher[open]').forEach(d => d.removeAttribute('open'));
+  }
+});
+              
+
 window.addEventListener('DOMContentLoaded', () => {
   const hash = window.location.hash.substring(1);
   if (hash) {
@@ -73,33 +117,43 @@ document.querySelectorAll('#year').forEach(el => {
 });
 
 
-var swiper = new Swiper(".multiple-slide-carousel", {
-    loop: false,
-    slidesPerView: 1,
-    spaceBetween: 10,
-    navigation: {
-      nextEl: ".multiple-slide-carousel .swiper-button-next",
-      prevEl: ".multiple-slide-carousel .swiper-button-prev",
-    },
-    breakpoints: {
-      320: {
-        slidesPerView: 1.4,
-        spaceBetween: 20
+/* Portfolio slider. Replaces the old ".multiple-slide-carousel" init for this section
+     (safe to move into main.js; needs the Swiper bundle). */
+  document.querySelectorAll('.portfolio-section').forEach(function (root) {
+    if (typeof Swiper === 'undefined') return;
+    new Swiper(root.querySelector('.portfolio-swiper'), {
+      loop: false,
+      speed: 600,
+      grabCursor: true,
+      watchOverflow: true,
+      slidesPerView: 1.25,
+      spaceBetween: 20,
+      navigation: {
+        prevEl: root.querySelector('.portfolio-prev'),
+        nextEl: root.querySelector('.portfolio-next')
       },
-      550: {
-        slidesPerView: 2,
-        spaceBetween: 20
+      scrollbar: {
+        el: root.querySelector('.portfolio-scrollbar'),
+        draggable: true,
+        snapOnRelease: true
       },
-      768: {
-        slidesPerView: 1.25,
-        spaceBetween: 30
+      keyboard: { enabled: true, onlyInViewport: true },
+      mousewheel: { forceToAxis: true, releaseOnEdges: true },
+      a11y: {
+        prevSlideMessage: 'Prethodni projekat',
+        nextSlideMessage: 'Sledeći projekat',
+        slideLabelMessage: 'Projekat {{index}} od {{slidesLength}}'
       },
-      1280: {
-        slidesPerView: 1.5,
-        spaceBetween: 50
+      breakpoints: {
+        450:  { slidesPerView: 1.45, spaceBetween: 20 },
+        640:  { slidesPerView: 2.00, spaceBetween: 20 },
+        768:  { slidesPerView: 1.25,  spaceBetween: 24 },
+        1024: { slidesPerView: 1.35, spaceBetween: 28 },
+        1280: { slidesPerView: 1.55, spaceBetween: 32 },
+        1536: { slidesPerView: 1.80, spaceBetween: 38 }
       }
-    }
-});
+    });
+  });
 
 var swiper2 = new Swiper(".multiple-slide-carousel-2", {
     loop: false,
@@ -119,60 +173,97 @@ var swiper2 = new Swiper(".multiple-slide-carousel-2", {
 });
 
 
-var mybutton = document.getElementById("scroll-to-top-button");
+(function () {
+      var btn = document.getElementById('scroll-to-top-button');
+      if (!btn) return;
 
-window.onscroll = function() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    mybutton.classList.remove("opacity-0", "pointer-events-none");
-    mybutton.classList.add("opacity-100", "pointer-events-auto");
-  } else {
-    mybutton.classList.remove("opacity-100", "pointer-events-auto");
-    mybutton.classList.add("opacity-0", "pointer-events-none");
-  }
-};
+      var ring = btn.querySelector('.stt-progress');
+      var C = 2 * Math.PI * 22;           // circle circumference (r = 22)
+      var SHOW_AFTER = 400;               // px scrolled before the button appears
+      var ticking = false;
 
-mybutton.onclick = function() {
-  window.scrollTo({ top: 0, behavior: "smooth" });
-}
+      ring.style.strokeDasharray = C;
+      ring.style.strokeDashoffset = C;
 
-document.addEventListener("DOMContentLoaded", function() {
-    const paginationItems = document.querySelectorAll("#pagination li");
-  
-    const slides = document.querySelectorAll(".slider-image");
-    const comments = document.querySelectorAll("#comment-section p");
-    const authors = document.querySelectorAll("[id^='author-info-']");
-    
-    paginationItems.forEach(function(item, index) {
-      item.addEventListener("click", function() {
-        slides.forEach(slide => {
-          slide.classList.remove("active");
-          slide.classList.add("hidden");
-        });
-        comments.forEach(comment => {
-          comment.classList.remove("active");
-          comment.classList.add("hidden");
-        });
-        authors.forEach(author => {
-          author.classList.remove("active");
-          author.classList.add("hidden");
-        });
-  
-        const currentSlide = document.getElementById(`slide-${index + 1}`);
-        const currentComment = document.getElementById(`comment-${index + 1}`);
-        const currentAuthor = document.getElementById(`author-info-${index + 1}`);
-  
-        currentSlide.classList.remove("hidden");
-        currentSlide.classList.add("active");
-        currentComment.classList.remove("hidden");
-        currentComment.classList.add("active");
-        currentAuthor.classList.remove("hidden");
-        currentAuthor.classList.add("active");
-  
-        paginationItems.forEach(item => item.classList.remove("active"));
-        item.classList.add("active");
+      function update() {
+        var y = window.pageYOffset || document.documentElement.scrollTop;
+        var max = document.documentElement.scrollHeight - window.innerHeight;
+        var progress = max > 0 ? Math.min(y / max, 1) : 0;
+        ring.style.strokeDashoffset = C * (1 - progress);
+        btn.classList.toggle('is-visible', y > SHOW_AFTER);
+        ticking = false;
+      }
+
+      // addEventListener (not window.onscroll) so it never overwrites other scroll handlers
+      window.addEventListener('scroll', function () {
+        if (!ticking) { ticking = true; requestAnimationFrame(update); }
+      }, { passive: true });
+      window.addEventListener('resize', update);
+
+      btn.addEventListener('click', function () {
+        var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+        window.scrollTo({ top: 0, behavior: reduce ? 'auto' : 'smooth' });
       });
+
+      update();
+    })();
+
+
+//testimonial slider
+document.addEventListener("DOMContentLoaded", function () {
+    const root = document.getElementById("slider-container");
+    if (!root) return;
+
+    const slides  = [...root.querySelectorAll(".slider-image")];
+    const pages   = [...root.querySelectorAll("#pagination li")];
+    const comments = [...root.querySelectorAll("#comment-section .tst-item")];
+    const authors = [...root.querySelectorAll("[id^='author-info-']")];
+    const total = slides.length;
+    let current = 0;
+
+    function goTo(index) {
+      current = (index + total) % total;
+
+      slides.forEach((el, i) => {
+        const offset = (i - current + total) % total; // 0 = active, 1 = next, 2 = prev
+        el.dataset.pos = offset === 0 ? "active" : offset === 1 ? "next" : "prev";
+        el.classList.toggle("is-active", offset === 0);
+        el.setAttribute("aria-hidden", offset === 0 ? "false" : "true");
+      });
+
+      [comments, authors].forEach(group =>
+        group.forEach((el, i) => {
+          el.classList.toggle("is-active", i === current);
+          el.setAttribute("aria-hidden", i === current ? "false" : "true");
+        })
+      );
+
+      pages.forEach((li, i) => {
+        li.classList.toggle("is-active", i === current);
+        li.firstElementChild.setAttribute("aria-current", i === current ? "true" : "false");
+      });
+    }
+
+    pages.forEach((li, i) => li.addEventListener("click", () => goTo(i)));
+    slides.forEach((img, i) => img.addEventListener("click", () => goTo(i))); // click a side image to bring it forward
+
+    root.addEventListener("keydown", e => {
+      if (e.key === "ArrowRight") goTo(current + 1);
+      if (e.key === "ArrowLeft") goTo(current - 1);
     });
-});
+
+    // Touch swipe (mobile)
+    let startX = null;
+    root.addEventListener("touchstart", e => { startX = e.touches[0].clientX; }, { passive: true });
+    root.addEventListener("touchend", e => {
+      if (startX === null) return;
+      const dx = e.changedTouches[0].clientX - startX;
+      if (Math.abs(dx) > 50) goTo(current + (dx < 0 ? 1 : -1));
+      startX = null;
+    });
+
+    goTo(0);
+  });
 
 function toggleMenu(event) {
   event.preventDefault();
