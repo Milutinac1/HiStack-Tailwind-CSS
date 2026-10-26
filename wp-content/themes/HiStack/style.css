@@ -541,7 +541,7 @@ body.no-scroll {
   #slider-container .tst-img {
     grid-area: 1 / 1;
     justify-self: start;
-    height: 180px;            /* fixed height from 0px up to the lg breakpoint */
+    height: 200px;            /* fixed height from 0px up to the lg breakpoint */
     width: auto;              /* width follows from the ratio, so it never grows with the viewport */
     max-width: 100%;
     margin-top: -3.5rem;      /* fixed pull-up: stays inside the section's 3rem top padding + container padding */
