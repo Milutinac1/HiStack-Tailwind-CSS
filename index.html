@@ -669,7 +669,7 @@
         <section class="p-2 sm:p-4">
             <!-- Content dynamically loaded by: 'loading-pattern-id_9b3e.php' -->
             <div class="rounded-3xl bg-[#FDEFF1] border border-red-100">
-              <div class="container text-center mx-auto px-3 py-14 md:py-[5rem] lg:py-[7rem]">
+              <div class="container text-center mx-auto px-2.5 py-14 md:py-[5rem] lg:py-[7rem]">
                 <div class="mb-12 xl:mb-14">
                     <span class="inline-block bg-red-200 text-secondary-red text-sm lg:text-base font-semibold px-5 py-2 rounded-full mb-4 lg:mb-6 xl:mb-7">
                         Vaš pouzdan digitalni partner
@@ -1295,98 +1295,102 @@
               </div>
             </div>
 
-            <!-- Featured article -->
-            <article class="media-card relative flex flex-col md:flex-row gap-5 lg:gap-8 rounded-3xl bg-[#FDEFF1] p-2 xl:p-5 hover:shadow-lg transition-shadow duration-300">
-              <div class="overflow-hidden rounded-2xl md:w-1/2 md:self-center xl:w-[55%]">
-                <img src="wp-content/uploads/2025/02/histack-fondacija.webp" alt="HiStack fondacija - Besplatni sajtovi za humanitarne svrhe" loading="lazy" decoding="async"
-                    class="media-img media-feature-img block w-full h-auto">
+            <div class="flex flex-col gap-5 xl:gap-7">
+
+              <!-- Featured article -->
+              <article class="media-card relative flex flex-col md:flex-row gap-5 lg:gap-8 rounded-3xl border border-red-100 bg-[#FDEFF1] p-2 xl:p-5 hover:shadow-lg transition-shadow duration-300">
+                <div class="overflow-hidden rounded-2xl md:w-1/2 md:self-center xl:w-[55%]">
+                  <img src="wp-content/uploads/2025/02/histack-fondacija.webp" alt="HiStack fondacija - Besplatni sajtovi za humanitarne svrhe" loading="lazy" decoding="async"
+                      class="media-img media-feature-img block w-full h-auto">
+                </div>
+                <div class="flex-1 flex flex-col justify-center px-4 pb-4 md:py-4 lg:pr-6 xl:pr-10">
+                  <span class="self-start rounded-full bg-white px-4 py-1.5 text-sm lg:text-base font-semibold text-secondary-red">HiStack Fondacija</span>
+                  <h3 class="media-title mt-4 xl:py-2 text-[22px] md:text-[28px] xl:text-[38px] font-semibold leading-tight text-[#333333]">
+                    <a href="histack-fondacija.html"><span class="text-secondary-red">Pomoć</span> koja menja svet</a>
+                  </h3>
+                  <p class="mt-3 lg:mt-4 max-w-xl text-sm md:text-base text-gray-500 leading-relaxed">
+                    Saznajte više o našim humanitarnim inicijativama i kako HiStack Fondacija pruža besplatne web sajtove za organizacije i projekte koji donose pozitivne promene.
+                  </p>
+                  <div class="mt-6 lg:mt-8 flex items-center justify-between gap-4 border-t border-red-200 pt-5 lg:pt-7">
+                    <span class="flex items-center gap-2 text-sm xl:text-base text-gray-500"><i class="fal fa-clock"></i>1 minut čitanja</span>
+                    <span aria-hidden="true" class="media-more flex items-center gap-2 text-sm xl:text-base font-semibold text-secondary-red">Pročitaj više <i class="far fa-long-arrow-right"></i></span>
+                  </div>
+                </div>
+              </article>
+
+              <!-- Article grid -->
+              <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 xl:gap-7">
+
+                <!-- Blog single start -->
+                <article data-categories="VODIČI, MARKETING" data-title="HiStack vodič: Marketing" class="blog-post media-card relative flex flex-col h-full rounded-3xl border border-red-100 bg-white p-2 hover:shadow-lg transition-shadow duration-300">
+                  <div class="overflow-hidden rounded-2xl">
+                    <img src="wp-content/uploads/2025/02/histack-vodic-marketing.webp" alt="" loading="lazy" decoding="async" class="media-img block w-full aspect-[16/9] object-cover">
+                  </div>
+                  <div class="flex flex-1 flex-col p-4 lg:p-5">
+                    <ul class="flex flex-wrap gap-2">
+                      <li class="rounded-full bg-red-100 px-4 py-1.5 text-sm lg:text-base font-semibold text-secondary-red">Vodiči</li>
+                      <li class="rounded-full bg-red-100 px-4 py-1.5 text-sm lg:text-base font-semibold text-secondary-red">Marketing</li>
+                    </ul>
+                    <h3 class="media-title mt-4 text-[22px] lg:text-xl xl:text-2xl font-semibold leading-tight text-[#333333]">
+                      <a href="vodic-za-marketing.html">HiStack vodič: Marketing</a>
+                    </h3>
+                    <p class="mt-3 text-sm md:text-base text-gray-500 leading-relaxed">Vodič sa koracima kako da definišete marketinšku strategiju za vaš projekat...</p>
+                    <div class="mt-auto pt-5">
+                      <div class="flex items-center justify-between gap-3 border-t border-red-100 pt-4">
+                        <span class="flex items-center gap-2 text-sm xl:text-base text-gray-500"><i class="fal fa-clock"></i>5 minuta čitanja</span>
+                        <span aria-hidden="true" class="media-more flex items-center gap-2 text-sm xl:text-base font-semibold text-secondary-red">Pročitaj više <i class="far fa-long-arrow-right"></i></span>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+
+                <!-- Blog single start -->
+                <article data-categories="VODIČI" data-title="HiStack vodič: Uputstvo za saradnju" class="blog-post media-card relative flex flex-col h-full rounded-3xl border border-red-100 bg-white p-2 hover:shadow-lg transition-shadow duration-300">
+                  <div class="overflow-hidden rounded-2xl">
+                    <img src="wp-content/uploads/2025/02/histack-vodic-za-saradnju.webp" alt="" loading="lazy" decoding="async" class="media-img block w-full aspect-[16/9] object-cover">
+                  </div>
+                  <div class="flex flex-1 flex-col p-4 lg:p-5">
+                    <ul class="flex flex-wrap gap-2">
+                      <li class="rounded-full bg-red-100 px-4 py-1.5 text-sm lg:text-base font-semibold text-secondary-red">Vodiči</li>
+                      <li class="rounded-full bg-red-100 px-4 py-1.5 text-sm lg:text-base font-semibold text-secondary-red">Marketing</li>
+                    </ul>
+                    <h3 class="media-title mt-4 text-[22px] lg:text-xl xl:text-2xl font-semibold leading-tight text-[#333333]">
+                      <a href="uputstvo-za-saradnju.html">HiStack vodič: Uputstvo za saradnju</a>
+                    </h3>
+                    <p class="mt-3 text-sm md:text-base text-gray-500 leading-relaxed">Korak po korak vodič kako da sarađujete s našim timom i maksimalno iskoristite usluge...</p>
+                    <div class="mt-auto pt-5">
+                      <div class="flex items-center justify-between gap-3 border-t border-red-100 pt-4">
+                        <span class="flex items-center gap-2 text-sm xl:text-base text-gray-500"><i class="fal fa-clock"></i>4 minuta čitanja</span>
+                        <span aria-hidden="true" class="media-more flex items-center gap-2 text-sm xl:text-base font-semibold text-secondary-red">Pročitaj više <i class="far fa-long-arrow-right"></i></span>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+
+                <!-- Blog single start (tablet: spans both columns as a horizontal card so there's no orphan) -->
+                <article data-categories="STORY, MARKETING, E-TRGOVINA" data-title="Digitalna Srbija: IT revolucija u e-trgovini" class="blog-post media-card relative flex flex-col md:flex-row lg:flex-col md:col-span-2 lg:col-span-1 h-full rounded-3xl border border-red-100 bg-white p-2 md:p-[11px] md:gap-5 lg:p-2 lg:gap-0 hover:shadow-lg transition-shadow duration-300">
+                  <div class="overflow-hidden rounded-2xl md:w-1/2 md:self-center lg:w-full">
+                    <img src="wp-content/uploads/2025/02/digitalna-srbija-e-trgovina.webp" alt="" loading="lazy" decoding="async" class="media-img media-last-img block w-full aspect-[16/9] object-cover">
+                  </div>
+                  <div class="flex flex-1 flex-col p-4 md:justify-center md:px-2 md:py-4 lg:justify-start lg:p-5">
+                    <ul class="flex flex-wrap gap-2">
+                      <li class="rounded-full bg-red-100 px-4 py-1.5 text-sm lg:text-base font-semibold text-secondary-red">Vodiči</li>
+                      <li class="rounded-full bg-red-100 px-4 py-1.5 text-sm lg:text-base font-semibold text-secondary-red">Marketing</li>
+                    </ul>
+                    <h3 class="media-title mt-4 text-[22px] lg:text-xl xl:text-2xl font-semibold leading-tight text-[#333333]">
+                      <a href="digitalna-srbija-it-revolucija-u-e-trgovini.html">Digitalna Srbija: IT revolucija u e-trgovini</a>
+                    </h3>
+                    <p class="mt-3 text-sm md:text-base text-gray-500 leading-relaxed">Kako vodeće IT kompanije transformišu e-trgovinu u Srbiji i otvaraju nove prilike za razvoj...</p>
+                    <div class="mt-auto pt-5 md:mt-6 md:pt-0 lg:mt-auto lg:pt-5">
+                      <div class="flex items-center justify-between gap-3 border-t border-red-100 pt-4 md:gap-4 md:border-t-0 md:pt-0 lg:gap-3 lg:border-t lg:pt-4">
+                        <span class="flex items-center gap-2 text-sm xl:text-base text-gray-500"><i class="fal fa-clock"></i>5 minuta čitanja</span>
+                        <span aria-hidden="true" class="media-more flex items-center gap-2 text-sm xl:text-base font-semibold text-secondary-red">Pročitaj više <i class="far fa-long-arrow-right"></i></span>
+                      </div>
+                    </div>
+                  </div>
+                </article>
               </div>
-              <div class="flex-1 flex flex-col justify-center px-4 pb-4 md:py-4 lg:pr-6 xl:pr-10">
-                <span class="self-start rounded-full bg-white px-4 py-1.5 text-sm lg:text-base font-semibold text-secondary-red">HiStack Fondacija</span>
-                <h3 class="media-title mt-4 xl:py-2 text-[22px] md:text-[28px] xl:text-[38px] font-semibold leading-tight text-[#333333]">
-                  <a href="histack-fondacija.html"><span class="text-secondary-red">Pomoć</span> koja menja svet</a>
-                </h3>
-                <p class="mt-3 lg:mt-4 max-w-xl text-sm md:text-base text-gray-500 leading-relaxed">
-                  Saznajte više o našim humanitarnim inicijativama i kako HiStack Fondacija pruža besplatne web sajtove za organizacije i projekte koji donose pozitivne promene.
-                </p>
-                <div class="mt-6 lg:mt-8 flex items-center justify-between gap-4 border-t border-red-200 pt-5 lg:pt-7">
-                  <span class="flex items-center gap-2 text-sm xl:text-base text-gray-500"><i class="fal fa-clock"></i>1 minut čitanja</span>
-                  <span aria-hidden="true" class="media-more flex items-center gap-2 text-sm xl:text-base font-semibold text-secondary-red">Pročitaj više <i class="far fa-long-arrow-right"></i></span>
-                </div>
-              </div>
-            </article>
-
-            <!-- Article grid -->
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 xl:gap-7">
-
-              <!-- Blog single start -->
-              <article data-categories="VODIČI, MARKETING" data-title="HiStack vodič: Marketing" class="blog-post media-card relative flex flex-col h-full rounded-3xl border border-red-100 bg-white p-2 hover:shadow-lg transition-shadow duration-300">
-                <div class="overflow-hidden rounded-2xl">
-                  <img src="wp-content/uploads/2025/02/histack-vodic-marketing.webp" alt="" loading="lazy" decoding="async" class="media-img block w-full aspect-[16/9] object-cover">
-                </div>
-                <div class="flex flex-1 flex-col p-4 lg:p-5">
-                  <ul class="flex flex-wrap gap-2">
-                    <li class="rounded-full bg-red-100 px-4 py-1.5 text-sm lg:text-base font-semibold text-secondary-red">Vodiči</li>
-                    <li class="rounded-full bg-red-100 px-4 py-1.5 text-sm lg:text-base font-semibold text-secondary-red">Marketing</li>
-                  </ul>
-                  <h3 class="media-title mt-4 text-[22px] lg:text-xl xl:text-2xl font-semibold leading-tight text-[#333333]">
-                    <a href="vodic-za-marketing.html">HiStack vodič: Marketing</a>
-                  </h3>
-                  <p class="mt-3 text-sm md:text-base text-gray-500 leading-relaxed">Vodič sa koracima kako da definišete marketinšku strategiju za vaš projekat...</p>
-                  <div class="mt-auto pt-5">
-                    <div class="flex items-center justify-between gap-3 border-t border-red-100 pt-4">
-                      <span class="flex items-center gap-2 text-sm xl:text-base text-gray-500"><i class="fal fa-clock"></i>5 minuta čitanja</span>
-                      <span aria-hidden="true" class="media-more flex items-center gap-2 text-sm xl:text-base font-semibold text-secondary-red">Pročitaj više <i class="far fa-long-arrow-right"></i></span>
-                    </div>
-                  </div>
-                </div>
-              </article>
-
-              <!-- Blog single start -->
-              <article data-categories="VODIČI" data-title="HiStack vodič: Uputstvo za saradnju" class="blog-post media-card relative flex flex-col h-full rounded-3xl border border-red-100 bg-white p-2 hover:shadow-lg transition-shadow duration-300">
-                <div class="overflow-hidden rounded-2xl">
-                  <img src="wp-content/uploads/2025/02/histack-vodic-za-saradnju.webp" alt="" loading="lazy" decoding="async" class="media-img block w-full aspect-[16/9] object-cover">
-                </div>
-                <div class="flex flex-1 flex-col p-4 lg:p-5">
-                  <ul class="flex flex-wrap gap-2">
-                    <li class="rounded-full bg-red-100 px-4 py-1.5 text-sm lg:text-base font-semibold text-secondary-red">Vodiči</li>
-                    <li class="rounded-full bg-red-100 px-4 py-1.5 text-sm lg:text-base font-semibold text-secondary-red">Marketing</li>
-                  </ul>
-                  <h3 class="media-title mt-4 text-[22px] lg:text-xl xl:text-2xl font-semibold leading-tight text-[#333333]">
-                    <a href="uputstvo-za-saradnju.html">HiStack vodič: Uputstvo za saradnju</a>
-                  </h3>
-                  <p class="mt-3 text-sm md:text-base text-gray-500 leading-relaxed">Korak po korak vodič kako da sarađujete s našim timom i maksimalno iskoristite usluge...</p>
-                  <div class="mt-auto pt-5">
-                    <div class="flex items-center justify-between gap-3 border-t border-red-100 pt-4">
-                      <span class="flex items-center gap-2 text-sm xl:text-base text-gray-500"><i class="fal fa-clock"></i>4 minuta čitanja</span>
-                      <span aria-hidden="true" class="media-more flex items-center gap-2 text-sm xl:text-base font-semibold text-secondary-red">Pročitaj više <i class="far fa-long-arrow-right"></i></span>
-                    </div>
-                  </div>
-                </div>
-              </article>
-
-              <!-- Blog single start (tablet: spans both columns as a horizontal card so there's no orphan) -->
-              <article data-categories="STORY, MARKETING, E-TRGOVINA" data-title="Digitalna Srbija: IT revolucija u e-trgovini" class="blog-post media-card relative flex flex-col md:flex-row lg:flex-col md:col-span-2 lg:col-span-1 h-full rounded-3xl border border-red-100 bg-white p-2 md:p-[11px] md:gap-5 lg:p-2 lg:gap-0 hover:shadow-lg transition-shadow duration-300">
-                <div class="overflow-hidden rounded-2xl md:w-1/2 md:self-center lg:w-full">
-                  <img src="wp-content/uploads/2025/02/digitalna-srbija-e-trgovina.webp" alt="" loading="lazy" decoding="async" class="media-img media-last-img block w-full aspect-[16/9] object-cover">
-                </div>
-                <div class="flex flex-1 flex-col p-4 md:justify-center md:px-2 md:py-4 lg:justify-start lg:p-5">
-                  <ul class="flex flex-wrap gap-2">
-                    <li class="rounded-full bg-red-100 px-4 py-1.5 text-sm lg:text-base font-semibold text-secondary-red">Vodiči</li>
-                    <li class="rounded-full bg-red-100 px-4 py-1.5 text-sm lg:text-base font-semibold text-secondary-red">Marketing</li>
-                  </ul>
-                  <h3 class="media-title mt-4 text-[22px] lg:text-xl xl:text-2xl font-semibold leading-tight text-[#333333]">
-                    <a href="digitalna-srbija-it-revolucija-u-e-trgovini.html">Digitalna Srbija: IT revolucija u e-trgovini</a>
-                  </h3>
-                  <p class="mt-3 text-sm md:text-base text-gray-500 leading-relaxed">Kako vodeće IT kompanije transformišu e-trgovinu u Srbiji i otvaraju nove prilike za razvoj...</p>
-                  <div class="mt-auto pt-5 md:mt-6 md:pt-0 lg:mt-auto lg:pt-5">
-                    <div class="flex items-center justify-between gap-3 border-t border-red-100 pt-4 md:gap-4 md:border-t-0 md:pt-0 lg:gap-3 lg:border-t lg:pt-4">
-                      <span class="flex items-center gap-2 text-sm xl:text-base text-gray-500"><i class="fal fa-clock"></i>5 minuta čitanja</span>
-                      <span aria-hidden="true" class="media-more flex items-center gap-2 text-sm xl:text-base font-semibold text-secondary-red">Pročitaj više <i class="far fa-long-arrow-right"></i></span>
-                    </div>
-                  </div>
-                </div>
-              </article>
+              
             </div>
 
             <!-- Mobile "view all" -->
