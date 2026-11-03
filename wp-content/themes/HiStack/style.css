@@ -71,6 +71,14 @@ html {
   background-color: #D81534;
 }
 
+.text-secondary-red:hover {
+  color: #D81534;
+}
+
+.bg-secondary-red:hover {
+  background-color: #D81534;
+}
+
 
 /* Mobile menu accordions (native <details>, no JS needed) */
   .nav-acc > summary { list-style: none; }
@@ -639,3 +647,10 @@ body.no-scroll {
   @media (prefers-reduced-motion: reduce) {
     #slider-container * { transition-duration: 1ms !important; transition-delay: 0s !important; }
   }
+
+
+  /* Infinite logo slider (keyframes can't be written as Tailwind utilities; can be moved to style.css) */
+            @keyframes hs-marquee { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+            .hs-marquee-track { animation: hs-marquee 40s linear infinite; }
+            .hs-marquee:hover .hs-marquee-track { animation-play-state: paused; }
+            @media (prefers-reduced-motion: reduce) { .hs-marquee-track { animation: none; } }
