@@ -6,78 +6,117 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="robots" content="index, follow">
 
   <!-- SEO Meta Tags -->
-  <meta name="description" content="Kontaktirajte HiStack za razvoj web sajtova, digitalnih proizvoda, mobilnih aplikacija i e-commerce rešenja. Pošaljite upit ili zakažite konsultacije. Tu smo za vas.">
-  <meta name="keywords" content="kontakt, HiStack, web razvoj, razvoj digitalnih proizvoda, razvoj mobilnih aplikacija, e-trgovina, kontakt informacije, Beograd">
+  <meta name="description" content="Kontaktirajte HiStack za razvoj sajta, digitalnog proizvoda, mobilne aplikacije ili online prodavnice. Pošaljite upit ili zakažite konsultacije.">
   <meta name="author" content="HiStack">
 
   <!-- Hreflang -->
-  <link rel="alternate" hreflang="sr" href="https://www.histack.rs/kontakt">
-  <link rel="alternate" hreflang="en" href="https://www.histack.rs/en/contact">
+  <link rel="alternate" hreflang="sr" href="https://www.histack.rs/kontakt.html">
+  <link rel="alternate" hreflang="en" href="https://www.histack.rs/en/contact.html">
   <link rel="alternate" hreflang="x-default" href="https://www.histack.rs/">
 
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
   <meta property="og:title" content="Kontakt – HiStack">
-  <meta property="og:description" content="Kontaktirajte HiStack za razvoj web sajtova, digitalnih proizvoda, mobilnih aplikacija i e-commerce rešenja. Pošaljite upit ili zakažite konsultacije. Tu smo za vas.">
-  <meta property="og:url" content="https://www.histack.rs/kontakt">
+  <meta property="og:description" content="Pošaljite upit ili zakažite konsultacije. Odgovaramo u roku od 12 sati.">
+  <meta property="og:url" content="https://www.histack.rs/kontakt.html">
   <meta property="og:image" content="https://www.histack.rs/wp-content/uploads/2025/01/histack-open-graph-highlight.webp">
+  <meta property="og:image:alt" content="HiStack – digitalna rešenja po meri">
   <meta property="og:site_name" content="HiStack">
   <meta property="og:locale" content="sr_RS">
-  <meta property="og:country-name" content="Serbia">
+  <meta property="og:locale:alternate" content="en_US">
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Kontakt – HiStack">
-  <meta name="twitter:description" content="Kontaktirajte HiStack za razvoj web sajtova, digitalnih proizvoda, mobilnih aplikacija i e-commerce rešenja. Pošaljite upit ili zakažite konsultacije. Tu smo za vas.">
+  <meta name="twitter:description" content="Pošaljite upit ili zakažite konsultacije. Odgovaramo u roku od 12 sati.">
   <meta name="twitter:image" content="https://www.histack.rs/wp-content/uploads/2025/01/histack-open-graph-highlight.webp">
   <meta name="twitter:site" content="@HiStackRS">
 
-  <!-- Kontakt Informacije (Schema.org) -->
+  <!-- Organization, page and breadcrumbs (Schema.org) -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "HiStack",
-    "url": "https://www.histack.rs/",
-    "logo": "https://www.histack.rs/wp-content/uploads/2025/01/histack-red-logo-v2.png",
-    "description": "HiStack – vaš pouzdan digitalni partner za razvoj web sajtova, digitalnih proizvoda, mobilnih aplikacija i e-trgovine.",
-    "sameAs": [
-      "https://www.instagram.com/histack.rs/",
-      "https://www.facebook.com/people/HiStack-Development/pfbid02m2bfaPQEZFR4rDbjxqGkSgd21cwaEBZk6oy1v8HE4SnzW11aJJ6PZ6kLRB7uT4gKl/",
-      "https://www.linkedin.com/in/histack-development/"
-    ],
-    "contactPoint": {
-      "@type": "ContactPoint",
-      "email": "contact@histack.rs",
-      "contactType": "customer service"
-    }
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://www.histack.rs/#organization",
+        "name": "HiStack",
+        "url": "https://www.histack.rs/",
+        "logo": "https://www.histack.rs/wp-content/uploads/2025/01/histack-red-logo-v2.png",
+        "description": "Digitalni partner za web razvoj, razvoj digitalnih proizvoda, mobilne aplikacije i rešenja za e-trgovinu.",
+        "sameAs": [
+          "https://www.instagram.com/histack.rs/",
+          "https://www.linkedin.com/in/histack-development/"
+        ],
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "email": "contact@histack.rs",
+          "contactType": "customer service",
+          "availableLanguage": [
+            "sr",
+            "en"
+          ]
+        }
+      },
+      {
+        "@type": "ContactPage",
+        "@id": "https://www.histack.rs/kontakt.html#webpage",
+        "url": "https://www.histack.rs/kontakt.html",
+        "name": "Kontakt – HiStack",
+        "description": "Kontaktirajte HiStack za razvoj sajta, digitalnog proizvoda, mobilne aplikacije ili online prodavnice. Pošaljite upit ili zakažite konsultacije.",
+        "inLanguage": "sr",
+        "isPartOf": {
+          "@id": "https://www.histack.rs/#website"
+        },
+        "about": {
+          "@id": "https://www.histack.rs/#organization"
+        },
+        "breadcrumb": {
+          "@id": "https://www.histack.rs/kontakt.html#breadcrumb"
+        }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://www.histack.rs/kontakt.html#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Početna",
+            "item": "https://www.histack.rs/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Kontakt",
+            "item": "https://www.histack.rs/kontakt.html"
+          }
+        ]
+      }
+    ]
   }
   </script>
 
   <!-- Favicon -->
-  <link rel="icon" href="wp-content/uploads/2025/01/favicon-red.png" type="image/x-icon">
+  <link rel="icon" href="/wp-content/uploads/2025/01/favicon-red.png" type="image/png">
   <link rel="manifest" href="/site.webmanifest">
 
   <!-- Performance -->
-  <link rel="preconnect" href="https://cdn.jsdelivr.net">
-  <link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
-  <link rel="canonical" href="https://www.histack.rs/kontakt">
+  <link rel="preconnect" href="https://unpkg.com">
+  <link rel="canonical" href="https://www.histack.rs/kontakt.html">
 
   <!-- Tailwind CSS -->
   <script src="https://cdn.tailwindcss.com"></script>
 
   <!-- Custom CSS -->
-  <link rel="stylesheet" href="wp-content/themes/HiStack/style.css">
-  <link rel="stylesheet" href="wp-content/themes/HiStack/assets/css/font-awesome-pro.css">
+  <link rel="stylesheet" href="/wp-content/themes/HiStack/style.css">
+  <link rel="stylesheet" href="/wp-content/themes/HiStack/assets/css/font-awesome-pro.css">
 
   <!-- External Plugins -->
-  <link href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" rel="stylesheet"/>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
 
   <!-- Title -->
   <title>Kontakt – HiStack</title>
@@ -93,17 +132,17 @@
         <div class="flex items-center gap-9 2xl:gap-11">
           <div class="flex flex-row items-center gap-1 xl:gap-0">
             <button type="button" id="mobileMenu-iconOpen" aria-label="Otvori meni" class="xl:hidden -ml-2 p-2">
-              <img src="wp-content/uploads/2025/01/menu-icon.png" alt="" class="block h-5 w-auto object-contain opacity-50">
+              <img src="/wp-content/uploads/2025/01/menu-icon.png" alt="" class="block h-5 w-auto object-contain opacity-50">
             </button>
-            <a href="index.html">
-              <img src="wp-content/uploads/2025/01/histack-red-logo-v2.png" alt="HiStack Logo" class="h-10 md:h-12 2xl:h-[3.3rem] w-auto object-contain">
+            <a href="/">
+              <img src="/wp-content/uploads/2025/01/histack-red-logo-v2.png" alt="HiStack Logo" class="h-10 md:h-12 2xl:h-[3.3rem] w-auto object-contain">
             </a>
           </div>
           <div>
             <ul class="hidden xl:flex gap-8 xl:gap-10 2xl:gap-11 font-semibold">
-              <li><a href="index.html" class="text-[17px] hover:text-[#d81535] transition duration-100">Početna</a></li>
+              <li><a href="/" class="text-[17px] hover:text-[#d81535] transition duration-100">Početna</a></li>
               <li class="hoverElement relative group icon-rotate-header-primary">
-                <a href="nase-usluge.html" class="text-[17px] hover:text-[#d81535] transition duration-100">Usluge <i class="far fa-chevron-down ml-1 i-rotate-custom"></i></a>
+                <a href="/usluge/" class="text-[17px] hover:text-[#d81535] transition duration-100">Usluge <i class="far fa-chevron-down ml-1 i-rotate-custom"></i></a>
                 <div class="hoverContent fixed t-0 left-1/2 transform -translate-x-1/2 w-full max-w-screen-xl opacity-0 visibility-hidden pointer-events-none group-hover:opacity-100 group-hover:visibility-visible group-hover:pointer-events-auto transition-all duration-300 z-50">
                   <div class="mt-12 bg-white shadow-2xl rounded-2xl p-5">
                     <div class="flex py-6 px-6">
@@ -111,8 +150,8 @@
                         <span class="text-secondary-red text-[24px] ms-4">Naše usluge</span>
                         <ul class="text-gray-500 mt-4">
                           <li class="hover:bg-gray-50 transition-all duration-100 p-4 rounded-xl w-4/5">
-                            <a href="web-dizajn-razvoj.html" class="flex gap-4 items-center">
-                              <img src="wp-content/uploads/2026/10/laptop-web-dev.png" alt="Ikonica za web razvoj" class="h-14">
+                            <a href="/usluge/web-razvoj.html" class="flex gap-4 items-center">
+                              <img src="/wp-content/uploads/2026/10/laptop-web-dev.png" alt="Ikonica za web razvoj" class="h-14">
                               <div class="flex-1">
                                 <span class="text-lg text-[#333333]">Web razvoj</span>
                                 <p class="text-sm">Dizajniramo i razvijamo veb-sajtove, web aplikacije, portale i kompleksne web platforme.</p>
@@ -120,8 +159,8 @@
                             </a>
                           </li>
                           <li class="hover:bg-gray-50 transition-all duration-100 p-4 rounded-xl w-4/5">
-                            <a href="wordpress-razvoj.html" class="flex gap-4 items-center">
-                              <img src="wp-content/uploads/2026/10/digital-product-dev-icon.png" alt="Ikonica za razvoj digitalnih proizvoda" class="h-14">
+                            <a href="/usluge/razvoj-digitalnih-proizvoda.html" class="flex gap-4 items-center">
+                              <img src="/wp-content/uploads/2026/10/digital-product-dev-icon.png" alt="Ikonica za razvoj digitalnih proizvoda" class="h-14">
                               <div class="flex-1">
                                 <span class="text-lg text-[#333333]">Razvoj digitalnih proizvoda</span>
                                 <p class="text-sm">Razvijamo SaaS platforme, digitalne proizvode po meri i MVP rešenja spremna za tržište.</p>
@@ -129,8 +168,8 @@
                             </a>
                           </li>
                           <li class="hover:bg-gray-50 transition-all duration-100 p-4 rounded-xl w-4/5">
-                            <a href="e-commerce-resenja.html" class="flex gap-4 items-center">
-                              <img src="wp-content/uploads/2026/10/mobile-app-dev-icon.png" alt="Ikonica za razvoj mobilnih aplikacija" class="h-14">
+                            <a href="/usluge/razvoj-mobilnih-aplikacija.html" class="flex gap-4 items-center">
+                              <img src="/wp-content/uploads/2026/10/mobile-app-dev-icon.png" alt="Ikonica za razvoj mobilnih aplikacija" class="h-14">
                               <div class="flex-1">
                                 <span class="text-lg text-[#333333]">Razvoj mobilnih aplikacija</span>
                                 <p class="text-sm">Razvijamo iOS, Android i cross-platform aplikacije prilagođene korisnicima i vašem poslovanju.</p>
@@ -138,8 +177,8 @@
                             </a>
                           </li>
                           <li class="hover:bg-gray-50 transition-all duration-100 p-4 rounded-xl w-4/5">
-                            <a href="seo-digitalni-marketing.html" class="flex gap-4 items-center">
-                              <img src="wp-content/uploads/2026/10/laptop-e-comm.png" alt="Ikonica za rešenja za e-trgovinu" class="h-14">
+                            <a href="/usluge/resenja-za-e-trgovinu.html" class="flex gap-4 items-center">
+                              <img src="/wp-content/uploads/2026/10/laptop-e-comm.png" alt="Ikonica za rešenja za e-trgovinu" class="h-14">
                               <div class="flex-1">
                                 <span class="text-lg text-[#333333]">Rešenja za e-trgovinu</span>
                                 <p class="text-sm">Gradimo online prodavnice i integrisana e-commerce rešenja za upravljanje prodajom, plaćanjima i kupcima.</p>
@@ -147,8 +186,8 @@
                             </a>
                           </li>
                         </ul>
-                        <a href="nase-usluge.html" class="ms-4 inline-flex w-[77%] gap-2 items-center bg-transparent border-2 border-secondary-red text-[#333333] text-base py-4 px-8 rounded-full font-semibold hover:border-gray-100 hover:bg-gray-100 transition duration-300 mt-10">
-                          <img src="wp-content/uploads/2025/01/favicon-red.png" alt="" class="w-5">
+                        <a href="/usluge/" class="ms-4 inline-flex w-[77%] gap-2 items-center bg-transparent border-2 border-secondary-red text-[#333333] text-base py-4 px-8 rounded-full font-semibold hover:border-gray-100 hover:bg-gray-100 transition duration-300 mt-10">
+                          <img src="/wp-content/uploads/2025/01/favicon-red.png" alt="" class="w-5">
                           Pregledajte sve naše usluge <i class="far fa-long-arrow-right ms-auto"></i>
                         </a>
                       </div>
@@ -156,7 +195,7 @@
                         <span class="text-secondary-red text-[24px] ms-4">Saradnja i podrška</span>
                         <ul class="text-gray-500 mt-4">
                           <li class="hover:bg-gray-50 transition-all duration-100 p-4 rounded-xl">
-                            <a href="kontakt.html" class="flex gap-4 items-center">
+                            <a href="/kontakt.html" class="flex gap-4 items-center">
                               <span class="shadow-[0_1px_10px_rgba(0,_0,_0,_0.1)] bg-white flex items-center justify-center w-16 h-16 rounded-full">
                                 <i class="fal fa-rocket-launch text-secondary-red text-[30px]"></i>
                               </span>
@@ -179,8 +218,8 @@
                           </li>
                         </ul>
                         <div class="flex pl-4 pt-4">
-                          <a href="vodic-za-koriscenje-platforme.html">
-                            <img src="wp-content/uploads/2025/05/vodic-za-koriscenje-platforme-thumbnail-1.webp" loading="lazy" alt="Vodič za korišćenje platforme" class="rounded-2xl shadow-xl hover:ring-2 hover:ring-red-600 transition-all duration-300">
+                          <a href="/resursi/vodic-za-koriscenje-platforme.html">
+                            <img src="/wp-content/uploads/2025/05/vodic-za-koriscenje-platforme-thumbnail-1.webp" loading="lazy" alt="Vodič za korišćenje platforme" class="rounded-2xl shadow-xl hover:ring-2 hover:ring-red-600 transition-all duration-300">
                           </a>
                         </div>
                       </div>
@@ -188,10 +227,10 @@
                   </div>
                 </div>
               </li>
-              <li><a href="o-nama.html" class="text-[17px] hover:text-[#d81535] transition duration-100">O nama</a></li>
-              <li><a href="nasi-projekti.html" class="text-[17px] hover:text-[#d81535] transition duration-100">Projekti</a></li>
+              <li><a href="/o-nama.html" class="text-[17px] hover:text-[#d81535] transition duration-100">O nama</a></li>
+              <li><a href="/projekti/" class="text-[17px] hover:text-[#d81535] transition duration-100">Projekti</a></li>
               <li class="hoverElement relative group icon-rotate-header-primary">
-                <a href="pomoc.html" class="text-[17px] hover:text-[#d81535] transition duration-100">Resursi <i class="far fa-chevron-down ml-1 i-rotate-custom"></i></a>
+                <a href="/resursi/" class="text-[17px] hover:text-[#d81535] transition duration-100">Resursi <i class="far fa-chevron-down ml-1 i-rotate-custom"></i></a>
                 <div class="hoverContent fixed t-0 left-1/2 transform -translate-x-1/2 w-full max-w-screen-xl opacity-0 visibility-hidden pointer-events-none group-hover:opacity-100 group-hover:visibility-visible group-hover:pointer-events-auto transition-all duration-300 z-50">
                   <div class="mt-12 bg-white shadow-2xl rounded-2xl p-5">
                     <div class="flex py-6 px-6 gap-8">
@@ -200,7 +239,7 @@
                           <span class="text-secondary-red text-[24px] ms-4">Politike</span>
                           <ul class="text-gray-500 mt-4">
                             <li class="hover:bg-gray-50 transition-all duration-100 p-4 rounded-xl">
-                              <a href="uslovi-koriscenja.html" class="flex gap-4 items-center">
+                              <a href="/resursi/uslovi-koriscenja.html" class="flex gap-4 items-center">
                                 <span class="shadow-[0_1px_10px_rgba(0,_0,_0,_0.1)] bg-white flex items-center justify-center w-16 h-16 rounded-full">
                                   <i class="fal fa-file-alt text-secondary-red text-[30px]"></i>
                                 </span>
@@ -211,7 +250,7 @@
                               </a>
                             </li>
                             <li class="hover:bg-gray-50 transition-all duration-100 p-4 rounded-xl">
-                              <a href="politika-privatnosti.html" class="flex gap-4 items-center">
+                              <a href="/resursi/politika-privatnosti.html" class="flex gap-4 items-center">
                                 <span class="shadow-[0_1px_10px_rgba(0,_0,_0,_0.1)] bg-white flex items-center justify-center w-16 h-16 rounded-full">
                                   <i class="fal fa-fingerprint text-secondary-red text-[30px]"></i>
                                 </span>
@@ -222,7 +261,7 @@
                               </a>
                             </li>
                             <li class="hover:bg-gray-50 transition-all duration-100 p-4 rounded-xl">
-                              <a href="kolacici.html" class="flex gap-4 items-center">
+                              <a href="/resursi/kolacici.html" class="flex gap-4 items-center">
                                 <span class="shadow-[0_1px_10px_rgba(0,_0,_0,_0.1)] bg-white flex items-center justify-center w-16 h-16 rounded-full">
                                   <i class="fal fa-cookie-bite text-secondary-red text-[30px]"></i>
                                 </span>
@@ -233,7 +272,7 @@
                               </a>
                             </li>
                             <li class="hover:bg-gray-50 transition-all duration-100 p-4 rounded-xl">
-                              <a href="pravne-informacije.html" class="flex gap-4 items-center">
+                              <a href="/resursi/pravne-informacije.html" class="flex gap-4 items-center">
                                 <span class="shadow-[0_1px_10px_rgba(0,_0,_0,_0.1)] bg-white flex items-center justify-center w-16 h-16 rounded-full">
                                   <i class="fal fa-file-contract text-secondary-red text-[30px]"></i>
                                 </span>
@@ -252,7 +291,7 @@
                             <span class="text-secondary-red text-[24px] ms-4">Podrška</span>
                             <ul class="text-gray-500 mt-4">
                               <li class="hover:bg-gray-50 transition-all duration-100 p-4 rounded-xl">
-                                <a href="vodic-za-koriscenje-platforme.html" class="flex gap-4 items-center">
+                                <a href="/resursi/vodic-za-koriscenje-platforme.html" class="flex gap-4 items-center">
                                   <span class="shadow-[0_1px_10px_rgba(0,_0,_0,_0.1)] bg-white flex items-center justify-center w-16 h-16 rounded-full">
                                     <i class="fal fa-phone-laptop text-secondary-red text-[30px]"></i>
                                   </span>
@@ -263,7 +302,7 @@
                                 </a>
                               </li>
                               <li class="hover:bg-gray-50 transition-all duration-100 p-4 rounded-xl">
-                                <a href="vodic-za-dizajn.html" class="flex gap-4 items-center">
+                                <a href="/resursi/proces-saradnje.html" class="flex gap-4 items-center">
                                   <span class="shadow-[0_1px_10px_rgba(0,_0,_0,_0.1)] bg-white flex items-center justify-center w-16 h-16 rounded-full">
                                     <i class="fal fa-handshake-alt text-secondary-red text-[30px]"></i>
                                   </span>
@@ -274,23 +313,7 @@
                                 </a>
                               </li>
                               <li class="hover:bg-gray-50 transition-all duration-100 p-4 rounded-xl">
-                                <a href="pomoc.html#faq" class="flex gap-4 items-center">
-                                  <span class="shadow-[0_1px_10px_rgba(0,_0,_0,_0.1)] bg-white flex items-center justify-center w-16 h-16 rounded-full">
-                                    <i class="fal fa-question text-secondary-red text-[30px]"></i>
-                                  </span>
-                                  <div class="flex-1">
-                                    <span class="text-lg text-[#333333]">Česta pitanja (FAQ)</span>
-                                    <p class="text-sm">Pronađite brze odgovore na pitanja o našim uslugama, procesima i načinu rada.</p>
-                                  </div>
-                                </a>
-                              </li>
-                            </ul>
-                          </div>
-                          <div class="flex-1 flex-col">
-                            <span class="text-secondary-red text-[24px] ms-4">HiStack</span>
-                            <ul class="text-gray-500 mt-4">
-                              <li class="hover:bg-gray-50 transition-all duration-100 p-4 rounded-xl">
-                                <a href="histack-fondacija.html" class="flex gap-4 items-center">
+                                <a href="/resursi/fondacija.html" class="flex gap-4 items-center">
                                   <span class="shadow-[0_1px_10px_rgba(0,_0,_0,_0.1)] bg-white flex items-center justify-center w-16 h-16 rounded-full">
                                     <i class="fal fa-hands-heart text-secondary-red text-[30px]"></i>
                                   </span>
@@ -300,19 +323,35 @@
                                   </div>
                                 </a>
                               </li>
+                            </ul>
+                          </div>
+                          <div class="flex-1 flex-col">
+                            <span class="text-secondary-red text-[24px] ms-4">HiStack</span>
+                            <ul class="text-gray-500 mt-4">
                               <li class="hover:bg-gray-50 transition-all duration-100 p-4 rounded-xl">
-                                <a href="vodic-za-koriscenje-platforme.html" class="flex gap-4 items-center">
+                                <a href="/resursi/eu-integracije.html" class="flex gap-4 items-center">
                                   <span class="shadow-[0_1px_10px_rgba(0,_0,_0,_0.1)] bg-white flex items-center justify-center w-16 h-16 rounded-full">
-                                    <i class="fal fa-briefcase text-secondary-red text-[30px]"></i>
+                                    <svg viewBox="0 0 24 24" width="36" height="36" fill="currentColor" aria-hidden="true" class="text-secondary-red"><polygon points="20.60,9.75 21.20,11.18 22.74,11.30 21.56,12.31 21.92,13.82 20.60,13.01 19.28,13.82 19.64,12.31 18.46,11.30 20.00,11.18"/><polygon points="19.45,14.05 20.04,15.48 21.59,15.60 20.41,16.61 20.77,18.12 19.45,17.31 18.13,18.12 18.48,16.61 17.31,15.60 18.85,15.48"/><polygon points="16.30,17.20 16.90,18.63 18.44,18.75 17.26,19.76 17.62,21.27 16.30,20.46 14.98,21.27 15.34,19.76 14.16,18.75 15.70,18.63"/><polygon points="12.00,18.35 12.60,19.78 14.14,19.90 12.96,20.91 13.32,22.42 12.00,21.61 10.68,22.42 11.04,20.91 9.86,19.90 11.40,19.78"/><polygon points="7.70,17.20 8.30,18.63 9.84,18.75 8.66,19.76 9.02,21.27 7.70,20.46 6.38,21.27 6.74,19.76 5.56,18.75 7.10,18.63"/><polygon points="4.55,14.05 5.15,15.48 6.69,15.60 5.52,16.61 5.87,18.12 4.55,17.31 3.23,18.12 3.59,16.61 2.41,15.60 3.96,15.48"/><polygon points="3.40,9.75 4.00,11.18 5.54,11.30 4.36,12.31 4.72,13.82 3.40,13.01 2.08,13.82 2.44,12.31 1.26,11.30 2.80,11.18"/><polygon points="4.55,5.45 5.15,6.88 6.69,7.00 5.52,8.01 5.87,9.52 4.55,8.71 3.23,9.52 3.59,8.01 2.41,7.00 3.96,6.88"/><polygon points="7.70,2.30 8.30,3.73 9.84,3.86 8.66,4.87 9.02,6.37 7.70,5.56 6.38,6.37 6.74,4.87 5.56,3.86 7.10,3.73"/><polygon points="12.00,1.15 12.60,2.58 14.14,2.70 12.96,3.71 13.32,5.22 12.00,4.41 10.68,5.22 11.04,3.71 9.86,2.70 11.40,2.58"/><polygon points="16.30,2.30 16.90,3.73 18.44,3.86 17.26,4.87 17.62,6.37 16.30,5.56 14.98,6.37 15.34,4.87 14.16,3.86 15.70,3.73"/><polygon points="19.45,5.45 20.04,6.88 21.59,7.00 20.41,8.01 20.77,9.52 19.45,8.71 18.13,9.52 18.48,8.01 17.31,7.00 18.85,6.88"/></svg>
                                   </span>
                                   <div class="flex-1">
-                                    <span class="text-lg text-[#333333]">Zapošljavamo</span>
-                                    <p class="text-sm">Istražite otvorene pozicije, upoznajte naš tim i otkrijte mogućnosti za profesionalni razvoj.</p>
+                                    <span class="text-lg text-[#333333]">EU integracije</span>
+                                    <p class="text-sm">Saznajte kako svoje usluge usklađujemo sa propisima i standardima Evropske unije.</p>
                                   </div>
                                 </a>
                               </li>
                               <li class="hover:bg-gray-50 transition-all duration-100 p-4 rounded-xl">
-                                <a href="vodic-za-marketing.html" class="flex gap-4 items-center">
+                                <a href="/resursi/karijera.html" class="flex gap-4 items-center">
+                                  <span class="shadow-[0_1px_10px_rgba(0,_0,_0,_0.1)] bg-white flex items-center justify-center w-16 h-16 rounded-full">
+                                    <i class="fal fa-briefcase text-secondary-red text-[30px]"></i>
+                                  </span>
+                                  <div class="flex-1">
+                                    <span class="text-lg text-[#333333]">Karijera</span>
+                                    <p class="text-sm">Pogledajte otvorene angažmane i način na koji sarađujemo sa stručnjacima.</p>
+                                  </div>
+                                </a>
+                              </li>
+                              <li class="hover:bg-gray-50 transition-all duration-100 p-4 rounded-xl">
+                                <a href="/resursi/partnerstvo.html" class="flex gap-4 items-center">
                                   <span class="shadow-[0_1px_10px_rgba(0,_0,_0,_0.1)] bg-white flex items-center justify-center w-16 h-16 rounded-full">
                                     <i class="fal fa-user-friends text-secondary-red text-[30px]"></i>
                                   </span>
@@ -326,8 +365,8 @@
                           </div>
                         </div>
                         <div class="flex flex-row gap-10 justify-center items-center">
-                          <a href="pomoc.html" class="inline-flex w-[95%] gap-2 items-center bg-transparent border-2 border-secondary-red text-[#333333] text-base py-4 px-8 rounded-full font-semibold hover:border-gray-100 hover:bg-gray-100 transition duration-300 mt-6">
-                            <img src="wp-content/uploads/2025/01/favicon-red.png" alt="" class="w-5">
+                          <a href="/resursi/" class="inline-flex w-[95%] gap-2 items-center bg-transparent border-2 border-secondary-red text-[#333333] text-base py-4 px-8 rounded-full font-semibold hover:border-gray-100 hover:bg-gray-100 transition duration-300 mt-6">
+                            <img src="/wp-content/uploads/2025/01/favicon-red.png" alt="" class="w-5">
                             Posetite stranu Resursi <i class="far fa-long-arrow-right ms-auto"></i>
                           </a>
                         </div>
@@ -336,8 +375,8 @@
                   </div>
                 </div>
               </li>
-              <li><a href="blog.html" class="text-[17px] hover:text-[#d81535] transition duration-100">Digi svet</a></li>
-              <li><a href="kontakt.html" class="text-[17px] hover:text-[#d81535] transition duration-100">Kontakt</a></li>
+              <li><a href="/digi-svet/" class="text-[17px] hover:text-[#d81535] transition duration-100">Digi svet</a></li>
+              <li><a href="/kontakt.html" aria-current="page" class="text-[17px] text-[#d81535] transition duration-100">Kontakt</a></li>
             </ul>
           </div>
         </div>
@@ -366,12 +405,12 @@
                           focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#D81534]/40
                           group-hover:border-[#D81534]/40 group-hover:text-[#D81534]
                           transition-colors duration-150">
-              <img src="wp-content/uploads/2025/05/RS-Serbia-Flag-icon.png" alt="" class="h-4 w-6 object-cover rounded-[3px] ring-1 ring-black/10">
+              <img src="/wp-content/uploads/2025/05/RS-Serbia-Flag-icon.png" alt="" class="h-4 w-6 object-cover rounded-[3px] ring-1 ring-black/10">
               <span>SR</span>
               <i class="far fa-chevron-down text-[11px] transition-transform duration-200 group-hover:rotate-180 group-focus-within:rotate-180"></i>
             </button>
 
-            <!-- pt-3 acts as a hover bridge so the menu doesn't close in the gap -->
+            <!-- Language dropdown -->
             <div class="absolute right-0 top-full pt-3 z-50
                         opacity-0 invisible -translate-y-1 pointer-events-none
                         group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 group-hover:pointer-events-auto
@@ -379,17 +418,17 @@
                         transition duration-200 ease-out">
               <ul class="w-48 p-1.5 rounded-xl bg-white border border-gray-100 shadow-[0_12px_32px_-8px_rgba(0,0,0,0.18)]">
                 <li>
-                  <a href="/" lang="sr" hreflang="sr" aria-current="true" class="flex items-center gap-3 px-3 py-2.5 rounded-lg bg-[#D81534]/[0.07] text-[#D81534]">
-                    <img src="wp-content/uploads/2025/05/RS-Serbia-Flag-icon.png" alt="" class="h-4 w-6 object-cover rounded-[3px] ring-1 ring-black/10">
+                  <a href="/kontakt.html" lang="sr" hreflang="sr" aria-current="true" class="flex items-center gap-3 px-3 py-2.5 rounded-lg bg-[#D81534]/[0.07] text-[#D81534]">
+                    <img src="/wp-content/uploads/2025/05/RS-Serbia-Flag-icon.png" alt="" class="h-4 w-6 object-cover rounded-[3px] ring-1 ring-black/10">
                     <span class="flex-1 text-[15px] font-semibold">Srpski</span>
                     <i class="far fa-check text-xs"></i>
                   </a>
                 </li>
                 <li>
-                  <a href="/en/" lang="en" hreflang="en"
+                  <a href="/en/contact.html" lang="en" hreflang="en"
                     class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-gray-700 hover:bg-gray-50 hover:text-[#D81534]
                             focus-visible:outline-none focus-visible:bg-gray-50 focus-visible:text-[#D81534] transition-colors duration-150">
-                    <img src="wp-content/uploads/2025/05/EN-United-Kingdom-Flag-icon.png" alt="" class="h-4 w-6 object-cover rounded-[3px] ring-1 ring-black/10">
+                    <img src="/wp-content/uploads/2025/05/EN-United-Kingdom-Flag-icon.png" alt="" class="h-4 w-6 object-cover rounded-[3px] ring-1 ring-black/10">
                     <span class="flex-1 text-[15px] font-medium">English</span>
                     <span class="text-xs font-medium text-gray-400">EN</span>
                   </a>
@@ -403,15 +442,15 @@
     <!-- Search popup start -->
     <div class="fixed inset-0 z-[70] bg-black bg-opacity-90 overflow-y-auto hidden" id="searchPopup" role="dialog" aria-modal="true" aria-label="Pretraga">
       <div class="container mx-auto p-5 flex justify-between items-center">
-        <a href="index.html">
-          <img src="wp-content/uploads/2025/01/logo-full-white.png" alt="HiStack Logo" class="h-11 lg:h-12 w-auto">
+        <a href="/">
+          <img src="/wp-content/uploads/2025/01/logo-full-white.png" alt="HiStack Logo" class="h-11 lg:h-12 w-auto">
         </a>
         <button type="button" id="searchPopup-btnClose" aria-label="Zatvori pretragu" class="p-2 -mr-2">
-          <img src="wp-content/uploads/2025/01/cross-out.png" alt="">
+          <img src="/wp-content/uploads/2025/01/cross-out.png" alt="">
         </button>
       </div>
       <div class="relative container mx-auto mt-5 p-5">
-        <input type="text" id="search" placeholder="Ukucaj za pretragu" aria-label="Pretraga" autocomplete="off" class="w-full py-5 pl-5 pr-12 bg-transparent border-b text-white text-base lg:text-[20px] focus:border-secondary-red outline-none transition-all duration-300 peer">
+        <input type="text" id="search" placeholder="Ukucaj za pretragu" aria-label="Pretraga" autocomplete="off" class="w-full py-5 pl-5 pr-12 bg-transparent border-b text-white text-base lg:text-[20px] focus:border-[#D81535] outline-none transition-all duration-300 peer">
         <button type="submit" aria-label="Pretraži" class="absolute right-5 top-1/2 transform -translate-y-1/2">
           <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
             <path d="M9.55 18.1C14.272 18.1 18.1 14.272 18.1 9.55C18.1 4.82797 14.272 1 9.55 1C4.82797 1 1 4.82797 1 9.55C1 14.272 4.82797 18.1 9.55 18.1Z" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -424,15 +463,15 @@
       </div>
     </div>
     <!-- Search popup end -->
-    <!-- Mobile menu start (ids and open/close classes unchanged, so main.js keeps working) -->
+    <!-- Mobile menu start -->
     <div id="mobileMenu-backdrop" class="fixed inset-0 z-[55] bg-black/50 hidden xl:hidden"></div>
     <div class="fixed inset-y-0 left-0 z-[60] w-full sm:max-w-[420px] bg-[#FEF7F8] flex flex-col hidden xl:hidden shadow-2xl transition-all duration-300 ease-in-out transform -translate-x-full" id="mobileMenu" role="dialog" aria-modal="true" aria-label="Glavni meni">
 
-      <!-- Top bar: stays pinned while the list scrolls -->
+      <!-- Top bar -->
       <div class="shrink-0 flex justify-between items-center px-5 py-3 md:py-4 bg-[linear-gradient(146deg,_rgba(177,13,40,1)_40%,_rgba(255,28,64,1)_77%,_rgba(245,129,32,1)_100%)]">
         <div class="flex gap-3 items-center">
-          <a href="index.html">
-            <img src="wp-content/uploads/2025/01/logo-full-white.png" alt="HiStack Logo" class="h-10 md:h-12 w-auto object-contain">
+          <a href="/">
+            <img src="/wp-content/uploads/2025/01/logo-full-white.png" alt="HiStack Logo" class="h-10 md:h-12 w-auto object-contain">
           </a>
 
           <!-- Language switcher (mobile) -->
@@ -445,22 +484,22 @@
                             active:bg-white/25 group-open:bg-white/25
                             focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/70
                             transition-colors duration-150">
-              <img src="wp-content/uploads/2025/05/RS-Serbia-Flag-icon.png" alt="" class="h-4 w-6 object-cover rounded-[3px] ring-1 ring-black/10">
+              <img src="/wp-content/uploads/2025/05/RS-Serbia-Flag-icon.png" alt="" class="h-4 w-6 object-cover rounded-[3px] ring-1 ring-black/10">
               <span>SR</span>
               <i class="far fa-chevron-down text-[10px] opacity-90 transition-transform duration-200 group-open:rotate-180"></i>
             </summary>
             <div class="absolute right-0 top-full mt-3 z-50">
               <ul class="w-44 p-1.5 rounded-xl bg-white border border-gray-100 shadow-[0_16px_36px_-8px_rgba(0,0,0,0.35)]">
                 <li>
-                  <a href="/" lang="sr" hreflang="sr" aria-current="true" class="flex items-center gap-3 px-3 py-3 rounded-lg bg-[#D81534]/[0.07] text-[#D81534]">
-                    <img src="wp-content/uploads/2025/05/RS-Serbia-Flag-icon.png" alt="" class="h-4 w-6 object-cover rounded-[3px] ring-1 ring-black/10">
+                  <a href="/kontakt.html" lang="sr" hreflang="sr" aria-current="true" class="flex items-center gap-3 px-3 py-3 rounded-lg bg-[#D81534]/[0.07] text-[#D81534]">
+                    <img src="/wp-content/uploads/2025/05/RS-Serbia-Flag-icon.png" alt="" class="h-4 w-6 object-cover rounded-[3px] ring-1 ring-black/10">
                     <span class="flex-1 text-[15px] font-semibold">Srpski</span>
                     <i class="far fa-check text-xs"></i>
                   </a>
                 </li>
                 <li>
-                  <a href="/en/" lang="en" hreflang="en" class="flex items-center gap-3 px-3 py-3 rounded-lg text-gray-700 active:bg-gray-100 hover:bg-gray-50">
-                    <img src="wp-content/uploads/2025/05/EN-United-Kingdom-Flag-icon.png" alt="" class="h-4 w-6 object-cover rounded-[3px] ring-1 ring-black/10">
+                  <a href="/en/contact.html" lang="en" hreflang="en" class="flex items-center gap-3 px-3 py-3 rounded-lg text-gray-700 active:bg-gray-100 hover:bg-gray-50">
+                    <img src="/wp-content/uploads/2025/05/EN-United-Kingdom-Flag-icon.png" alt="" class="h-4 w-6 object-cover rounded-[3px] ring-1 ring-black/10">
                     <span class="flex-1 text-[15px] font-medium">English</span>
                     <span class="text-xs font-medium text-gray-400">EN</span>
                   </a>
@@ -471,19 +510,19 @@
         </div>
 
         <button type="button" id="mobileMenu-iconClose" aria-label="Zatvori meni" class="p-2 -mr-2">
-          <img src="wp-content/uploads/2025/01/x.png" alt="" class="h-6 w-auto object-contain">
+          <img src="/wp-content/uploads/2025/01/x.png" alt="" class="h-6 w-auto object-contain">
         </button>
       </div>
 
       <!-- Scrollable area -->
-      <div class="flex-1 overflow-y-auto overscroll-contain">
+      <div class="flex-1 flex flex-col overflow-y-auto overscroll-contain">
 
-        <!-- Quick actions (the header bar is hidden behind the menu, so Moj ID lives here too) -->
+        <!-- Quick actions -->
         <div class="mx-5 py-5 border-b flex flex-wrap gap-2">
           <a href="https://app.histack.rs/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 rounded-full border border-[#D81534]/30 bg-[#D81534]/[0.05] px-4 py-2.5 text-sm font-semibold text-secondary-red active:bg-[#D81534]/10">
             <i class="fal fa-user-circle text-base"></i>Moj ID
           </a>
-          <a href="pomoc.html" class="inline-flex items-center gap-2 rounded-full border border-[#D81534]/30 bg-[#D81534]/[0.05] px-4 py-2.5 text-sm font-semibold text-secondary-red active:bg-[#D81534]/10">
+          <a href="/resursi/" class="inline-flex items-center gap-2 rounded-full border border-[#D81534]/30 bg-[#D81534]/[0.05] px-4 py-2.5 text-sm font-semibold text-secondary-red active:bg-[#D81534]/10">
             <i class="fal fa-life-ring text-base"></i>Centar za podršku
           </a>
           <a href="https://app.histack.rs/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 rounded-full border border-[#D81534]/30 bg-[#D81534]/[0.05] px-4 py-2.5 text-sm font-semibold text-secondary-red active:bg-[#D81534]/10">
@@ -491,12 +530,12 @@
           </a>
         </div>
 
-        <!-- Navigation: same labels, order and destinations as desktop -->
+        <!-- Navigation -->
         <nav aria-label="Mobilna navigacija" class="px-5 font-semibold">
           <ul>
-            <li class="border-b"><a href="index.html" class="flex items-center py-4 text-base font-semibold active:text-secondary-red">Početna</a></li>
+            <li class="border-b"><a href="/" class="flex items-center py-4 text-base font-semibold active:text-[#D81535]">Početna</a></li>
 
-            <!-- Usluge -->
+            <!-- Services -->
             <li class="border-b">
               <details class="nav-acc group" name="mobile-nav">
                 <summary class="flex items-center justify-between py-4 text-base cursor-pointer select-none">
@@ -507,26 +546,26 @@
                   <p class="text-secondary-red text-[15px] font-semibold mb-1">Naše usluge</p>
                   <ul>
                     <li>
-                      <a href="web-dizajn-razvoj.html" class="flex items-center gap-3 py-2.5 rounded-xl active:bg-gray-50">
-                        <img src="/wp-content/uploads/2026/10/laptop-web-dev.png" alt="Razvoj digitalnih proizvoda" class="w-[4.5rem] h-auto">
+                      <a href="/usluge/web-razvoj.html" class="flex items-center gap-3 py-2.5 rounded-xl active:bg-gray-50">
+                        <img src="/wp-content/uploads/2026/10/laptop-web-dev.png" alt="" class="w-[4.5rem] h-auto">
                         <span class="text-[15px] font-semibold">Web razvoj</span>
                       </a>
                     </li>
                     <li>
-                      <a href="wordpress-razvoj.html" class="flex items-center gap-3 py-2.5 rounded-xl active:bg-gray-50">
-                        <img src="/wp-content/uploads/2026/10/digital-product-dev-icon.png" alt="Razvoj digitalnih proizvoda" class="w-[4.5rem] h-auto">
+                      <a href="/usluge/razvoj-digitalnih-proizvoda.html" class="flex items-center gap-3 py-2.5 rounded-xl active:bg-gray-50">
+                        <img src="/wp-content/uploads/2026/10/digital-product-dev-icon.png" alt="" class="w-[4.5rem] h-auto">
                         <span class="text-[15px] font-semibold">Razvoj digitalnih proizvoda</span>
                       </a>
                     </li>
                     <li>
-                      <a href="e-commerce-resenja.html" class="flex items-center gap-3 py-2.5 rounded-xl active:bg-gray-50">
-                        <img src="/wp-content/uploads/2026/10/mobile-app-dev-icon.png" alt="Razvoj digitalnih proizvoda" class="w-[4.5rem] h-auto">
+                      <a href="/usluge/razvoj-mobilnih-aplikacija.html" class="flex items-center gap-3 py-2.5 rounded-xl active:bg-gray-50">
+                        <img src="/wp-content/uploads/2026/10/mobile-app-dev-icon.png" alt="" class="w-[4.5rem] h-auto">
                         <span class="text-[15px] font-semibold">Razvoj mobilnih aplikacija</span>
                       </a>
                     </li>
                     <li>
-                      <a href="seo-digitalni-marketing.html" class="flex items-center gap-3 py-2.5 rounded-xl active:bg-gray-50">
-                        <img src="/wp-content/uploads/2026/10/laptop-e-comm.png" alt="Razvoj digitalnih proizvoda" class="w-[4.5rem] h-auto">
+                      <a href="/usluge/resenja-za-e-trgovinu.html" class="flex items-center gap-3 py-2.5 rounded-xl active:bg-gray-50">
+                        <img src="/wp-content/uploads/2026/10/laptop-e-comm.png" alt="" class="w-[4.5rem] h-auto">
                         <span class="text-[15px] font-semibold">Rešenja za e-trgovinu</span>
                       </a>
                     </li>
@@ -535,7 +574,7 @@
                   <p class="text-secondary-red text-base font-semibold mt-4 mb-1">Saradnja i podrška</p>
                   <ul>
                     <li>
-                      <a href="kontakt.html" class="flex items-center gap-3 py-2.5 rounded-xl active:bg-gray-50">
+                      <a href="/kontakt.html" class="flex items-center gap-3 py-2.5 rounded-xl active:bg-gray-50">
                         <span class="shrink-0 flex items-center justify-center w-[3rem] h-[3rem] rounded-full bg-white shadow-[0_1px_10px_rgba(0,0,0,0.1)]"><i class="fal fa-rocket-launch text-secondary-red text-[22px]"></i></span>
                         <span class="text-[15px] font-semibold">Imate projekat na umu?</span>
                       </a>
@@ -548,18 +587,18 @@
                     </li>
                   </ul>
 
-                  <a href="nase-usluge.html" class="mt-4 flex w-full gap-2 items-center border border-[#e5e7eb] text-[15px] py-3.5 px-5 rounded-full font-semibold active:bg-gray-100 transition duration-300">
-                    <img src="wp-content/uploads/2025/01/favicon-red.png" alt="" class="w-5">
+                  <a href="/usluge/" class="mt-4 flex w-full gap-2 items-center border border-[#e5e7eb] text-[15px] py-3.5 px-5 rounded-full font-semibold active:bg-gray-100 transition duration-300">
+                    <img src="/wp-content/uploads/2025/01/favicon-red.png" alt="" class="w-5">
                     Pregledajte sve naše usluge <i class="far fa-long-arrow-right ms-auto"></i>
                   </a>
                 </div>
               </details>
             </li>
 
-            <li class="border-b"><a href="o-nama.html" class="flex items-center py-4 text-base active:text-secondary-red">O nama</a></li>
-            <li class="border-b"><a href="nasi-projekti.html" class="flex items-center py-4 text-base active:text-secondary-red">Projekti</a></li>
+            <li class="border-b"><a href="/o-nama.html" class="flex items-center py-4 text-base active:text-[#D81535]">O nama</a></li>
+            <li class="border-b"><a href="/projekti/" class="flex items-center py-4 text-base active:text-[#D81535]">Projekti</a></li>
 
-            <!-- Resursi -->
+            <!-- Resources -->
             <li class="border-b">
               <details class="nav-acc group" name="mobile-nav">
                 <summary class="flex items-center justify-between py-4 text-base cursor-pointer select-none">
@@ -570,25 +609,25 @@
                   <p class="text-secondary-red text-[15px] font-semibold mb-1">Politike</p>
                   <ul>
                     <li>
-                      <a href="uslovi-koriscenja.html" class="flex items-center gap-3 py-2.5 rounded-xl active:bg-gray-50">
+                      <a href="/resursi/uslovi-koriscenja.html" class="flex items-center gap-3 py-2.5 rounded-xl active:bg-gray-50">
                         <span class="shrink-0 flex items-center justify-center w-[3rem] h-[3rem] rounded-full bg-white shadow-[0_1px_10px_rgba(0,0,0,0.1)]"><i class="fal fa-file-alt text-secondary-red text-[22px]"></i></span>
                         <span class="text-[15px] font-semibold">Uslovi korišćenja</span>
                       </a>
                     </li>
                     <li>
-                      <a href="politika-privatnosti.html" class="flex items-center gap-3 py-2.5 rounded-xl active:bg-gray-50">
+                      <a href="/resursi/politika-privatnosti.html" class="flex items-center gap-3 py-2.5 rounded-xl active:bg-gray-50">
                         <span class="shrink-0 flex items-center justify-center w-[3rem] h-[3rem] rounded-full bg-white shadow-[0_1px_10px_rgba(0,0,0,0.1)]"><i class="fal fa-fingerprint text-secondary-red text-[22px]"></i></span>
                         <span class="text-[15px] font-semibold">Politika privatnosti</span>
                       </a>
                     </li>
                     <li>
-                      <a href="kolacici.html" class="flex items-center gap-3 py-2.5 rounded-xl active:bg-gray-50">
+                      <a href="/resursi/kolacici.html" class="flex items-center gap-3 py-2.5 rounded-xl active:bg-gray-50">
                         <span class="shrink-0 flex items-center justify-center w-[3rem] h-[3rem] rounded-full bg-white shadow-[0_1px_10px_rgba(0,0,0,0.1)]"><i class="fal fa-cookie-bite text-secondary-red text-[22px]"></i></span>
                         <span class="text-[15px] font-semibold">Politika kolačića</span>
                       </a>
                     </li>
                     <li>
-                      <a href="pravne-informacije.html" class="flex items-center gap-3 py-2.5 rounded-xl active:bg-gray-50">
+                      <a href="/resursi/pravne-informacije.html" class="flex items-center gap-3 py-2.5 rounded-xl active:bg-gray-50">
                         <span class="shrink-0 flex items-center justify-center w-[3rem] h-[3rem] rounded-full bg-white shadow-[0_1px_10px_rgba(0,0,0,0.1)]"><i class="fal fa-file-contract text-secondary-red text-[22px]"></i></span>
                         <span class="text-[15px] font-semibold">Pravne informacije</span>
                       </a>
@@ -598,21 +637,21 @@
                   <p class="text-secondary-red text-[15px] font-semibold mt-4 mb-1">Podrška</p>
                   <ul>
                     <li>
-                      <a href="vodic-za-koriscenje-platforme.html" class="flex items-center gap-3 py-2.5 rounded-xl active:bg-gray-50">
+                      <a href="/resursi/vodic-za-koriscenje-platforme.html" class="flex items-center gap-3 py-2.5 rounded-xl active:bg-gray-50">
                         <span class="shrink-0 flex items-center justify-center w-[3rem] h-[3rem] rounded-full bg-white shadow-[0_1px_10px_rgba(0,0,0,0.1)]"><i class="fal fa-phone-laptop text-secondary-red text-[22px]"></i></span>
                         <span class="text-[15px] font-semibold">HiStack portal</span>
                       </a>
                     </li>
                     <li>
-                      <a href="vodic-za-dizajn.html" class="flex items-center gap-3 py-2.5 rounded-xl active:bg-gray-50">
+                      <a href="/resursi/proces-saradnje.html" class="flex items-center gap-3 py-2.5 rounded-xl active:bg-gray-50">
                         <span class="shrink-0 flex items-center justify-center w-[3rem] h-[3rem] rounded-full bg-white shadow-[0_1px_10px_rgba(0,0,0,0.1)]"><i class="fal fa-handshake-alt text-secondary-red text-[22px]"></i></span>
                         <span class="text-[15px] font-semibold">Proces saradnje</span>
                       </a>
                     </li>
                     <li>
-                      <a href="pomoc.html#faq" class="flex items-center gap-3 py-2.5 rounded-xl active:bg-gray-50">
-                        <span class="shrink-0 flex items-center justify-center w-[3rem] h-[3rem] rounded-full bg-white shadow-[0_1px_10px_rgba(0,0,0,0.1)]"><i class="fal fa-question text-secondary-red text-[22px]"></i></span>
-                        <span class="text-[15px] font-semibold">Česta pitanja (FAQ)</span>
+                      <a href="/resursi/fondacija.html" class="flex items-center gap-3 py-2.5 rounded-xl active:bg-gray-50">
+                        <span class="shrink-0 flex items-center justify-center w-[3rem] h-[3rem] rounded-full bg-white shadow-[0_1px_10px_rgba(0,0,0,0.1)]"><i class="fal fa-hands-heart text-secondary-red text-[22px]"></i></span>
+                        <span class="text-[15px] font-semibold">HiStack Fondacija</span>
                       </a>
                     </li>
                   </ul>
@@ -620,43 +659,44 @@
                   <p class="text-secondary-red text-[15px] font-semibold mt-4 mb-1">HiStack</p>
                   <ul>
                     <li>
-                      <a href="histack-fondacija.html" class="flex items-center gap-3 py-2.5 rounded-xl active:bg-gray-50">
-                        <span class="shrink-0 flex items-center justify-center w-[3rem] h-[3rem] rounded-full bg-white shadow-[0_1px_10px_rgba(0,0,0,0.1)]"><i class="fal fa-hands-heart text-secondary-red text-[22px]"></i></span>
-                        <span class="text-[15px] font-semibold">HiStack Fondacija</span>
+                      <a href="/resursi/eu-integracije.html" class="flex items-center gap-3 py-2.5 rounded-xl active:bg-gray-50">
+                        <span class="shrink-0 flex items-center justify-center w-[3rem] h-[3rem] rounded-full bg-white shadow-[0_1px_10px_rgba(0,0,0,0.1)]"><svg viewBox="0 0 24 24" width="27" height="27" fill="currentColor" aria-hidden="true" class="text-secondary-red"><polygon points="20.60,9.75 21.20,11.18 22.74,11.30 21.56,12.31 21.92,13.82 20.60,13.01 19.28,13.82 19.64,12.31 18.46,11.30 20.00,11.18"/><polygon points="19.45,14.05 20.04,15.48 21.59,15.60 20.41,16.61 20.77,18.12 19.45,17.31 18.13,18.12 18.48,16.61 17.31,15.60 18.85,15.48"/><polygon points="16.30,17.20 16.90,18.63 18.44,18.75 17.26,19.76 17.62,21.27 16.30,20.46 14.98,21.27 15.34,19.76 14.16,18.75 15.70,18.63"/><polygon points="12.00,18.35 12.60,19.78 14.14,19.90 12.96,20.91 13.32,22.42 12.00,21.61 10.68,22.42 11.04,20.91 9.86,19.90 11.40,19.78"/><polygon points="7.70,17.20 8.30,18.63 9.84,18.75 8.66,19.76 9.02,21.27 7.70,20.46 6.38,21.27 6.74,19.76 5.56,18.75 7.10,18.63"/><polygon points="4.55,14.05 5.15,15.48 6.69,15.60 5.52,16.61 5.87,18.12 4.55,17.31 3.23,18.12 3.59,16.61 2.41,15.60 3.96,15.48"/><polygon points="3.40,9.75 4.00,11.18 5.54,11.30 4.36,12.31 4.72,13.82 3.40,13.01 2.08,13.82 2.44,12.31 1.26,11.30 2.80,11.18"/><polygon points="4.55,5.45 5.15,6.88 6.69,7.00 5.52,8.01 5.87,9.52 4.55,8.71 3.23,9.52 3.59,8.01 2.41,7.00 3.96,6.88"/><polygon points="7.70,2.30 8.30,3.73 9.84,3.86 8.66,4.87 9.02,6.37 7.70,5.56 6.38,6.37 6.74,4.87 5.56,3.86 7.10,3.73"/><polygon points="12.00,1.15 12.60,2.58 14.14,2.70 12.96,3.71 13.32,5.22 12.00,4.41 10.68,5.22 11.04,3.71 9.86,2.70 11.40,2.58"/><polygon points="16.30,2.30 16.90,3.73 18.44,3.86 17.26,4.87 17.62,6.37 16.30,5.56 14.98,6.37 15.34,4.87 14.16,3.86 15.70,3.73"/><polygon points="19.45,5.45 20.04,6.88 21.59,7.00 20.41,8.01 20.77,9.52 19.45,8.71 18.13,9.52 18.48,8.01 17.31,7.00 18.85,6.88"/></svg></span>
+                        <span class="text-[15px] font-semibold">EU integracije</span>
                       </a>
                     </li>
                     <li>
-                      <a href="vodic-za-koriscenje-platforme.html" class="flex items-center gap-3 py-2.5 rounded-xl active:bg-gray-50">
+                      <a href="/resursi/karijera.html" class="flex items-center gap-3 py-2.5 rounded-xl active:bg-gray-50">
                         <span class="shrink-0 flex items-center justify-center w-[3rem] h-[3rem] rounded-full bg-white shadow-[0_1px_10px_rgba(0,0,0,0.1)]"><i class="fal fa-briefcase text-secondary-red text-[22px]"></i></span>
-                        <span class="text-[15px] font-semibold">Zapošljavamo</span>
+                        <span class="text-[15px] font-semibold">Karijera</span>
                       </a>
                     </li>
                     <li>
-                      <a href="vodic-za-marketing.html" class="flex items-center gap-3 py-2.5 rounded-xl active:bg-gray-50">
+                      <a href="/resursi/partnerstvo.html" class="flex items-center gap-3 py-2.5 rounded-xl active:bg-gray-50">
                         <span class="shrink-0 flex items-center justify-center w-[3rem] h-[3rem] rounded-full bg-white shadow-[0_1px_10px_rgba(0,0,0,0.1)]"><i class="fal fa-user-friends text-secondary-red text-[22px]"></i></span>
                         <span class="text-[15px] font-semibold">Partnerstvo</span>
                       </a>
                     </li>
                   </ul>
 
-                  <a href="pomoc.html" class="mt-4 flex w-full gap-2 items-center border border-[#e5e7eb] text-[15px] py-3.5 px-5 rounded-full font-semibold active:bg-gray-100 transition duration-300">
-                    <img src="wp-content/uploads/2025/01/favicon-red.png" alt="" class="w-5">
+                  <a href="/resursi/" class="mt-4 flex w-full gap-2 items-center border border-[#e5e7eb] text-[15px] py-3.5 px-5 rounded-full font-semibold active:bg-gray-100 transition duration-300">
+                    <img src="/wp-content/uploads/2025/01/favicon-red.png" alt="" class="w-5">
                     Posetite stranu Resursi <i class="far fa-long-arrow-right ms-auto"></i>
                   </a>
                 </div>
               </details>
             </li>
 
-            <li class="border-b"><a href="blog.html" class="flex items-center py-4 text-base active:text-secondary-red">Digi svet</a></li>
-            <li><a href="kontakt.html" class="flex items-center py-4 text-base active:text-secondary-red">Kontakt</a></li>
+            <li class="border-b"><a href="/digi-svet/" class="flex items-center py-4 text-base active:text-[#D81535]">Digi svet</a></li>
+            <li><a href="/kontakt.html" aria-current="page" class="flex items-center py-4 text-base text-secondary-red">Kontakt</a></li>
           </ul>
-        </nav>
-      </div>
 
-      <!-- Footer: always visible, respects the iPhone home indicator -->
-      <div class="shrink-0 flex flex-wrap items-center justify-between gap-x-4 gap-y-2 px-5 pt-4 pb-[max(1rem,env(safe-area-inset-bottom))] bg-[#D81534]/10">
+        </nav>
+
+        <!-- Contact bar -->
+        <div class="mt-auto shrink-0 flex flex-wrap items-center justify-between gap-x-4 gap-y-2 px-5 pt-4 pb-[max(1rem,env(safe-area-inset-bottom))] bg-[#D81534]/10">
         <a href="mailto:contact@histack.rs" class="inline-flex items-center gap-2 text-sm text-[#333333]"><i class="fal fa-envelope"></i>contact@histack.rs</a>
         <a href="https://calendly.com/histackdev" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-sm font-semibold text-secondary-red"><i class="fal fa-calendar-alt"></i>Zakaži termin</a>
+      </div>
       </div>
     </div>
     <!-- Mobile menu end -->
@@ -677,7 +717,7 @@
                     </span>
                     <h1 data-aos="fade-in" class="text-[28px] lg:text-[36px] xl:text-[48px] text-secondary-red font-semibold leading-tight mb-5 lg:mb-6 flex items-center gap-3">
                         Kontaktirajte nas
-                        <img src="wp-content/uploads/2025/01/1f590.svg" alt="" class="w-9 lg:w-11">
+                        <img src="/wp-content/uploads/2025/01/1f590.svg" alt="" class="w-9 lg:w-11">
                     </h1>
                     <p class="text-sm lg:text-base text-gray-500 mb-3 lg:mb-4 leading-relaxed">
                         Naš tim je tu da vam obezbedi stručnu podršku i konsultacije u okviru potencijalne ili već postojeće saradnje.
@@ -689,7 +729,7 @@
                         <b class="font-semibold text-[#333333] text-[length:inherit]">Napomena:</b> Molimo vas da se suzdržite od slanja mejlova vezanih za promotivni sadržaj, osim ako to nije specifično zatraženo s naše strane.
                     </p>
 
-                    <p class="inline-flex items-center gap-2 rounded-full bg-white border border-red-100 px-4 py-2 text-sm lg:text-base font-semibold shadow-sm">
+                    <p class="inline-flex items-center gap-2 rounded-2xl border border-red-100 px-4 py-2 text-sm lg:text-base font-semibold">
                         <svg class="w-6 h-4 shrink-0 rounded-[3px] ring-1 ring-black/10" viewBox="0 0 810 540" aria-hidden="true" focusable="false"><rect width="810" height="540" fill="#039"/><g fill="#fc0"><polygon points="585.0,240.0 591.8,260.7 613.5,260.7 595.9,273.6 602.6,294.3 585.0,281.5 567.4,294.3 574.1,273.6 556.5,260.7 578.2,260.7"/><polygon points="560.9,330.0 567.6,350.7 589.4,350.7 571.8,363.6 578.5,384.3 560.9,371.5 543.3,384.3 549.9,363.6 532.4,350.7 554.1,350.7"/><polygon points="495.0,395.9 501.8,416.6 523.5,416.6 505.9,429.4 512.6,450.2 495.0,437.4 477.4,450.2 484.1,429.4 466.5,416.6 488.2,416.6"/><polygon points="405.0,420.0 411.8,440.7 433.5,440.7 415.9,453.6 422.6,474.3 405.0,461.5 387.4,474.3 394.1,453.6 376.5,440.7 398.2,440.7"/><polygon points="315.0,395.9 321.8,416.6 343.5,416.6 325.9,429.4 332.6,450.2 315.0,437.4 297.4,450.2 304.1,429.4 286.5,416.6 308.2,416.6"/><polygon points="249.1,330.0 255.9,350.7 277.6,350.7 260.1,363.6 266.7,384.3 249.1,371.5 231.5,384.3 238.2,363.6 220.6,350.7 242.4,350.7"/><polygon points="225.0,240.0 231.8,260.7 253.5,260.7 235.9,273.6 242.6,294.3 225.0,281.5 207.4,294.3 214.1,273.6 196.5,260.7 218.2,260.7"/><polygon points="249.1,150.0 255.9,170.7 277.6,170.7 260.1,183.6 266.7,204.3 249.1,191.5 231.5,204.3 238.2,183.6 220.6,170.7 242.4,170.7"/><polygon points="315.0,84.1 321.8,104.8 343.5,104.8 325.9,117.7 332.6,138.4 315.0,125.6 297.4,138.4 304.1,117.7 286.5,104.8 308.2,104.8"/><polygon points="405.0,60.0 411.8,80.7 433.5,80.7 415.9,93.6 422.6,114.3 405.0,101.5 387.4,114.3 394.1,93.6 376.5,80.7 398.2,80.7"/><polygon points="495.0,84.1 501.8,104.8 523.5,104.8 505.9,117.7 512.6,138.4 495.0,125.6 477.4,138.4 484.1,117.7 466.5,104.8 488.2,104.8"/><polygon points="560.9,150.0 567.6,170.7 589.4,170.7 571.8,183.6 578.5,204.3 560.9,191.5 543.3,204.3 549.9,183.6 532.4,170.7 554.1,170.7"/></g></svg>
                         Zaštita podataka u skladu sa GDPR-om.
                     </p>
@@ -697,7 +737,7 @@
                     <!-- Contact channels -->
                     <ul class="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-3">
                         <li class="sm:col-span-2">
-                            <a href="mailto:contact@histack.rs" class="group flex h-full items-start gap-4 rounded-2xl border border-red-100 bg-white p-4 hover:border-secondary-red hover:shadow-lg transition-all duration-300">
+                            <a href="mailto:contact@histack.rs" class="group flex h-full items-start gap-4 rounded-2xl border border-red-100 p-4 hover:border-[#D81535] hover:shadow-lg transition-all duration-300">
                                 <span class="flex shrink-0 items-center justify-center w-12 h-12 rounded-full bg-red-50 text-secondary-red text-[20px] transition-colors duration-200"><i class="fal fa-envelope lg:text-lg" aria-hidden="true"></i></span>
                                 <span class="min-w-0">
                                     <span class="block text-sm text-gray-500">Email</span>
@@ -705,7 +745,7 @@
                                 </span>
                             </a>
                         </li>
-                        <li class="flex h-full items-start gap-4 rounded-2xl border border-red-100 bg-white p-4">
+                        <li class="flex h-full items-start gap-4 rounded-2xl border border-red-100 p-4">
                             <span class="flex shrink-0 items-center justify-center w-12 h-12 rounded-full bg-red-50 text-secondary-red text-[20px]"><i class="fal fa-map-marker-alt lg:text-lg" aria-hidden="true"></i></span>
                             <span class="min-w-0">
                                 <span class="block text-sm text-gray-500">Lokacija</span>
@@ -713,7 +753,7 @@
                                 <span class="block text-sm text-gray-500 mt-0.5">Poslujemo za klijente širom sveta</span>
                             </span>
                         </li>
-                        <li class="flex h-full items-start gap-4 rounded-2xl border border-red-100 bg-white p-4">
+                        <li class="flex h-full items-start gap-4 rounded-2xl border border-red-100 p-4">
                             <span class="flex shrink-0 items-center justify-center w-12 h-12 rounded-full bg-red-50 text-secondary-red text-[20px]"><i class="fal fa-clock lg:text-lg" aria-hidden="true"></i></span>
                             <span class="min-w-0">
                                 <span class="block text-sm text-gray-500">Radno vreme</span>
@@ -723,8 +763,8 @@
                         </li>
                     </ul>
 
-                    <!-- Business data (wording unchanged from the legally reviewed version) -->
-                    <div class="mt-8 rounded-3xl border border-red-100 bg-white p-6">
+                    <!-- Business data -->
+                    <div class="mt-8 rounded-3xl border border-red-100 p-6">
                         <h2 class="text-base lg:text-xl font-semibold mb-4">Poslovni podaci</h2>
                         <dl class="text-sm lg:text-base divide-y divide-red-100">
                             <div class="py-3 first:pt-0 grid grid-cols-1 sm:grid-cols-[150px_1fr] gap-x-4 gap-y-1 text-[length:inherit]">
@@ -752,7 +792,7 @@
                             <span class="text-sm lg:text-base font-semibold">Prijavite problem sa vašim ID-jem</span>
                             <span aria-hidden="true" class="shrink-0 flex items-center justify-center w-9 h-9 rounded-full bg-white group-hover:bg-red-100 text-secondary-red text-sm transition-colors duration-200"><i class="far fa-long-arrow-right"></i></span>
                         </a>
-                        <a href="pomoc.html#dokumentacija" class="group flex items-center justify-between gap-4 rounded-2xl px-4 py-4 hover:bg-white transition-colors duration-200">
+                        <a href="/resursi/#dokumentacija" class="group flex items-center justify-between gap-4 rounded-2xl px-4 py-4 hover:bg-white transition-colors duration-200">
                             <span class="text-sm lg:text-base font-semibold">Pogledajte dokumentaciju ovde</span>
                             <span aria-hidden="true" class="shrink-0 flex items-center justify-center w-9 h-9 rounded-full bg-white group-hover:bg-red-100 text-secondary-red text-sm transition-colors duration-200"><i class="far fa-long-arrow-right"></i></span>
                         </a>
@@ -768,19 +808,19 @@
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-x-5 gap-y-5">
                             <div>
                                 <label for="name" class="block text-sm font-semibold mb-2">Ime i prezime*</label>
-                                <input id="name" type="text" name="name" autocomplete="name" placeholder="Unesite ime i prezime" required class="w-full rounded-2xl border border-red-100 bg-[#FEF7F8] px-5 py-4 text-sm lg:text-base placeholder:text-gray-400 outline-none transition duration-200 focus:border-secondary-red focus:bg-white focus:ring-2 focus:ring-secondary-red/20">
+                                <input id="name" type="text" name="name" autocomplete="name" placeholder="Unesite ime i prezime" required class="w-full rounded-2xl border border-red-100 bg-[#FEF7F8] px-5 py-4 text-sm lg:text-base placeholder:text-gray-400 outline-none transition duration-200 focus:border-[#D81535] focus:bg-white focus:ring-2 focus:ring-[#D81535]/20">
                             </div>
                             <div>
                                 <label for="email" class="block text-sm font-semibold mb-2">Email adresa*</label>
-                                <input id="email" type="email" name="email" autocomplete="email" placeholder="Unesite email adresu" required class="w-full rounded-2xl border border-red-100 bg-[#FEF7F8] px-5 py-4 text-sm lg:text-base placeholder:text-gray-400 outline-none transition duration-200 focus:border-secondary-red focus:bg-white focus:ring-2 focus:ring-secondary-red/20">
+                                <input id="email" type="email" name="email" autocomplete="email" placeholder="Unesite email adresu" required class="w-full rounded-2xl border border-red-100 bg-[#FEF7F8] px-5 py-4 text-sm lg:text-base placeholder:text-gray-400 outline-none transition duration-200 focus:border-[#D81535] focus:bg-white focus:ring-2 focus:ring-[#D81535]/20">
                             </div>
                             <div>
                                 <label for="company" class="block text-sm font-semibold mb-2">Vaša firma <span class="font-normal text-gray-400 text-[length:inherit]">(opcionalno)</span></label>
-                                <input id="company" type="text" name="company" autocomplete="organization" placeholder="Unesite ime firme" class="w-full rounded-2xl border border-red-100 bg-[#FEF7F8] px-5 py-4 text-sm lg:text-base placeholder:text-gray-400 outline-none transition duration-200 focus:border-secondary-red focus:bg-white focus:ring-2 focus:ring-secondary-red/20">
+                                <input id="company" type="text" name="company" autocomplete="organization" placeholder="Unesite ime firme" class="w-full rounded-2xl border border-red-100 bg-[#FEF7F8] px-5 py-4 text-sm lg:text-base placeholder:text-gray-400 outline-none transition duration-200 focus:border-[#D81535] focus:bg-white focus:ring-2 focus:ring-[#D81535]/20">
                             </div>
                             <div>
                                 <label for="phone-number" class="block text-sm font-semibold mb-2">Kontakt telefon <span class="font-normal text-gray-400 text-[length:inherit]">(opcionalno)</span></label>
-                                <input id="phone-number" type="tel" name="phone-number" autocomplete="tel" inputmode="tel" placeholder="Unesite broj telefona" class="w-full rounded-2xl border border-red-100 bg-[#FEF7F8] px-5 py-4 text-sm lg:text-base placeholder:text-gray-400 outline-none transition duration-200 focus:border-secondary-red focus:bg-white focus:ring-2 focus:ring-secondary-red/20">
+                                <input id="phone-number" type="tel" name="phone-number" autocomplete="tel" inputmode="tel" placeholder="Unesite broj telefona" class="w-full rounded-2xl border border-red-100 bg-[#FEF7F8] px-5 py-4 text-sm lg:text-base placeholder:text-gray-400 outline-none transition duration-200 focus:border-[#D81535] focus:bg-white focus:ring-2 focus:ring-[#D81535]/20">
                             </div>
                         </div>
 
@@ -813,7 +853,7 @@
                         <div class="mt-6">
                             <label for="budget" class="block text-sm font-semibold mb-2">Vaš budžet</label>
                             <div class="relative">
-                                <select id="budget" name="budget" class="w-full appearance-none rounded-2xl border border-red-100 bg-[#FEF7F8] px-5 py-4 pr-12 text-sm lg:text-base outline-none transition duration-200 focus:border-secondary-red focus:bg-white focus:ring-2 focus:ring-secondary-red/20">
+                                <select id="budget" name="budget" class="w-full appearance-none rounded-2xl border border-red-100 bg-[#FEF7F8] px-5 py-4 pr-12 text-sm lg:text-base outline-none transition duration-200 focus:border-[#D81535] focus:bg-white focus:ring-2 focus:ring-[#D81535]/20">
                                     <option value="Nedefinisan budžet">Nedefinisan budžet</option>
                                     <option value="Manje od 500.000 RSD">&lt; 500.000 RSD</option>
                                     <option value="500.000 - 1.000.000 RSD">500.000 RSD - 1.000.000 RSD</option>
@@ -826,12 +866,12 @@
 
                         <div class="mt-6">
                             <label for="message" class="block text-sm font-semibold mb-2">Poruka*</label>
-                            <textarea id="message" name="message" rows="5" required placeholder="Opišite ukratko vaš projekat, ciljeve i okvirni rok." class="w-full min-h-[140px] resize-y rounded-2xl border border-red-100 bg-[#FEF7F8] px-5 py-4 text-sm lg:text-base placeholder:text-gray-400 outline-none transition duration-200 focus:border-secondary-red focus:bg-white focus:ring-2 focus:ring-secondary-red/20"></textarea>
+                            <textarea id="message" name="message" rows="5" required placeholder="Opišite ukratko vaš projekat, ciljeve i okvirni rok." class="w-full min-h-[140px] resize-y rounded-2xl border border-red-100 bg-[#FEF7F8] px-5 py-4 text-sm lg:text-base placeholder:text-gray-400 outline-none transition duration-200 focus:border-[#D81535] focus:bg-white focus:ring-2 focus:ring-[#D81535]/20"></textarea>
                         </div>
 
                         <label class="mt-6 flex items-start gap-3 cursor-pointer text-sm text-gray-500 leading-relaxed">
                             <input type="checkbox" name="consent" value="Da" required class="mt-0.5 w-5 h-5 shrink-0 rounded border-red-200 accent-[#D81534] cursor-pointer">
-                            <span class="text-[length:inherit]">Saglasan/a sam da HiStack obradi podatke iz ovog obrasca radi odgovora na moj upit. Više informacija u <a href="politika-privatnosti.html" class="font-semibold text-secondary-red text-[length:inherit] underline underline-offset-2 hover:text-[#333333] transition-colors duration-200">Politici privatnosti</a>.</span>
+                            <span class="text-[length:inherit]">Saglasan/a sam da HiStack obradi podatke iz ovog obrasca radi odgovora na moj upit. Više informacija u <a href="/resursi/politika-privatnosti.html" class="font-semibold text-secondary-red text-[length:inherit] underline underline-offset-2 hover:text-[#333333] transition-colors duration-200">Politici privatnosti</a>.</span>
                         </label>
 
                         <!-- FormSubmit settings -->
@@ -854,33 +894,34 @@
         <!-- Section generated by: 'loading-pattern-id_7d2a.php' -->
         <!-- Map 'id_map-2' section start -->
         <section class="container mx-auto px-5 pb-1 lg:pb-10" aria-labelledby="mapTitle">
+            <!-- Content dynamically loaded by: 'loading-pattern-id_9b3e.php' -->
             <div class="relative overflow-hidden rounded-3xl border border-red-100 bg-[#FDEFF1]">
 
                 <div class="relative overflow-hidden h-[320px] sm:h-[520px] lg:h-[580px]">
 
-                    <!-- Fallback (visible until the map is loaded, and if it can't load) -->
+                    <!-- Map fallback -->
                     <div class="absolute inset-0 bg-[radial-gradient(circle_at_center,#FEF7F8_0%,#F8CBD4_100%)]" aria-hidden="true">
                         <span class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[260px] h-[260px] sm:w-[420px] sm:h-[420px] rounded-full border-[18px] border-white/50"></span>
                         <span class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[440px] h-[440px] sm:w-[720px] sm:h-[720px] rounded-full border-[18px] border-white/30"></span>
                     </div>
 
-                    <!-- Map: OpenStreetMap embed at city level. pointer-events-none = no zoom, no drag, no click. The iframe is 5rem taller (top and bottom) and 4rem wider (left and right) than the frame, so its own zoom buttons and attribution bar fall outside the visible area (same center). Our own small attribution below keeps the OSM license requirement. -->
+                    <!-- Map: OpenStreetMap embed -->
                     <iframe id="beogradMap" title="Mapa Beograda" src="https://www.openstreetmap.org/export/embed.html?bbox=20.27%2C44.73%2C20.63%2C44.90&amp;layer=mapnik" loading="lazy" referrerpolicy="no-referrer" tabindex="-1" aria-hidden="true" class="absolute -left-16 -top-20 w-[calc(100%+8rem)] h-[calc(100%+10rem)] max-w-none border-0 pointer-events-none grayscale contrast-[1.05] opacity-0 transition-opacity duration-700" onload="this.classList.remove('opacity-0')"></iframe>
                     <div class="absolute inset-0 bg-[#F8CBD4] mix-blend-multiply pointer-events-none" aria-hidden="true"></div>
                     <div class="absolute inset-0 bg-gradient-to-t from-white/30 via-transparent to-white/10 pointer-events-none" aria-hidden="true"></div>
 
-                    <!-- Pin: city level, not an address -->
+                    <!-- Map pin -->
                     <div class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-col items-center pointer-events-none" aria-hidden="true">
                         <span class="mb-3 rounded-full bg-white px-4 py-1.5 text-sm lg:text-base font-semibold text-[#333333] shadow-xl">Beograd</span>
                         <span class="relative flex w-5 h-5">
                             <span class="absolute inline-flex w-full h-full rounded-full bg-secondary-red opacity-50 animate-ping motion-reduce:animate-none"></span>
-                            <span class="absolute -inset-4 rounded-full bg-secondary-red/10"></span>
+                            <span class="absolute -inset-4 rounded-full bg-[#D81535]/10"></span>
                             <span class="relative inline-flex w-5 h-5 rounded-full bg-secondary-red border-[3px] border-white shadow-lg"></span>
                         </span>
                     </div>
 
                     <p class="absolute right-2 bottom-1.5 z-10 rounded bg-white/70 px-1.5 py-0.5 text-[10px] leading-none text-gray-500 backdrop-blur-sm">
-                        <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener" class="hover:text-secondary-red">© OpenStreetMap</a>
+                        <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener" class="hover:text-[#D81535]">© OpenStreetMap</a>
                     </p>
                 </div>
 
@@ -922,7 +963,7 @@
                     btn.disabled = true;
                     label.textContent = 'Šaljem…';
                 });
-                // Restore the button if the user comes back with the browser's back button
+                // Re-enable the button after back navigation
                 window.addEventListener('pageshow', function (e) {
                     if (e.persisted) { btn.disabled = false; label.textContent = idleText; }
                 });
@@ -959,9 +1000,10 @@
     <!-- Section generated by: 'load-footer-secondary.php' -->
     <!-- Footer secondary section start -->
     <footer class="container mx-auto py-3 md:py-4 px-5">
+        <!-- Content dynamically loaded by: 'loading-pattern-id_9b3e.php' -->
 
-        <!-- Newsletter panel -->
-        <div class="mt-10 lg:mt-14 flex flex-col lg:flex-row lg:items-center justify-between gap-5 lg:gap-10 rounded-3xl bg-[#FDEFF1] border border-red-100 px-6 py-7 lg:px-10 lg:py-9">
+        <!-- Newsletter -->
+        <div class="mt-10 lg:mt-14 flex flex-col lg:flex-row lg:items-center justify-between gap-5 lg:gap-10 rounded-3xl border border-red-100 px-6 py-7 lg:px-10 lg:py-9">
             <div class="lg:max-w-xl text-[#333333]">
                 <h3 class="text-[18px] lg:text-[22px] font-semibold">
                     Prijavite se na newsletter
@@ -969,114 +1011,117 @@
                 </h3>
                 <p class="mt-3 text-sm lg:text-base text-gray-500">Budite u toku sa najnovijim vestima, promocijama i događanjima.</p>
             </div>
-            <form action="https://formsubmit.co/histackdev@gmail.com" method="POST" class="flex flex-col sm:flex-row gap-3 w-full lg:w-[48%] xl:w-[40%]">
-                <input type="email" name="email" required placeholder="Unesite email adresu" aria-label="Email adresa" class="flex-1 min-w-0 bg-white border-2 border-secondary-red rounded-full py-3.5 px-6 text-sm lg:text-base focus:outline-none focus:ring-2 focus:ring-secondary-red/30">
-                <button type="submit" class="inline-flex items-center justify-center bg-secondary-red text-white text-sm lg:text-base font-semibold rounded-full py-3.5 px-7 transition duration-300 hover:bg-[#333333]">
-                    Prijavite se <i class="fa fa-paper-plane ml-2"></i>
-                </button>
-            </form>
+            <div class="w-full lg:w-[48%] xl:w-[40%]">
+                <form action="https://formsubmit.co/histackdev@gmail.com" method="POST" class="flex flex-col sm:flex-row gap-3">
+                    <input type="email" name="email" required placeholder="Unesite email adresu" aria-label="Email adresa" autocomplete="email"
+                      class="flex-1 min-w-0 bg-transparent border-2 border-secondary-red rounded-full py-3.5 px-6 text-sm lg:text-base text-[#333333] placeholder:text-gray-400 outline-none focus:outline-none focus:ring-4 focus:ring-[#D81535]/15 transition-shadow duration-200">
+                    <button type="submit" class="inline-flex items-center justify-center bg-secondary-red text-white text-sm lg:text-base font-semibold rounded-full py-3.5 px-7 transition duration-300 hover:bg-red-400 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-[#D81535]/25">
+                        Prijavite se <i class="fa fa-paper-plane ml-2" aria-hidden="true"></i>
+                    </button>
+                </form>
+                <p class="mt-3 text-xs lg:text-sm text-gray-400">Prijavom prihvatate <a href="/resursi/politika-privatnosti.html" class="text-xs lg:text-sm underline underline-offset-2 hover:text-[#D81535] transition-colors duration-200">Politiku privatnosti</a>. Odjava je moguća u svakom trenutku.</p>
+            </div>
         </div>
 
-        <!-- Main grid: 2 columns on mobile -->
+        <!-- Main grid -->
         <div class="grid grid-cols-2 lg:grid-cols-12 gap-x-6 gap-y-10 py-10 xl:py-14">
 
             <!-- Brand + contact -->
             <div class="col-span-2 lg:col-span-12 xl:col-span-3 text-[#333333]">
-                <img src="wp-content/uploads/2025/01/histack-red-logo-v2.png" loading="lazy" alt="HiStack Footer Logo" class="h-12 w-auto">
-                <p class="mt-4 text-sm lg:text-base text-gray-500 max-w-xs">HiStack - Najbolja digitalna rešenja koja će vas pokrenuti.</p>
+                <img src="/wp-content/uploads/2025/01/histack-red-logo-v2.png" loading="lazy" alt="HiStack" class="h-12 w-auto">
+                <p class="mt-4 text-sm lg:text-base text-gray-500 max-w-xs">Digitalni partner za razvoj sajtova, digitalnih proizvoda, mobilnih aplikacija i online prodavnica.</p>
                 <ul class="mt-6 grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-1 gap-x-8 gap-y-3 lg:gap-y-4">
-                    <li class="flex items-center gap-3">
-                        <span class="flex shrink-0 items-center justify-center w-10 h-10 rounded-full bg-red-50 text-secondary-red text-[18px]"><i class="fal fa-envelope text-lg"></i></span>
-                        <a href="mailto:contact@histack.rs" class="text-sm lg:text-base text-gray-500 hover:text-secondary-red transition-colors duration-200 break-all">contact@histack.rs</a>
+                    <li class="flex items-center gap-3 text-sm lg:text-base">
+                        <span class="flex shrink-0 items-center justify-center w-10 h-10 rounded-full bg-[#FDEFF1] text-secondary-red text-[18px]"><i class="fal fa-envelope text-lg" aria-hidden="true"></i></span>
+                        <a href="mailto:contact@histack.rs" class="text-sm lg:text-base text-gray-500 hover:text-[#D81535] transition-colors duration-200 break-all">contact@histack.rs</a>
                     </li>
-                    <li class="flex items-center gap-3">
-                        <span class="flex shrink-0 items-center justify-center w-10 h-10 rounded-full bg-red-50 text-secondary-red text-[18px]"><i class="fal fa-calendar-alt text-lg"></i></span>
-                        <a href="https://calendly.com/histackdev" target="_blank" rel="noopener" class="text-sm lg:text-base text-gray-500 hover:text-secondary-red transition-colors duration-200">Zakaži termin</a>
+                    <li class="flex items-center gap-3 text-sm lg:text-base">
+                        <span class="flex shrink-0 items-center justify-center w-10 h-10 rounded-full bg-[#FDEFF1] text-secondary-red text-[18px]"><i class="fal fa-calendar-alt text-lg" aria-hidden="true"></i></span>
+                        <a href="https://calendly.com/histackdev" target="_blank" rel="noopener noreferrer" class="text-sm lg:text-base text-gray-500 hover:text-[#D81535] transition-colors duration-200">Zakažite termin</a>
                     </li>
-                    <li class="flex items-center gap-3">
-                        <span class="flex shrink-0 items-center justify-center w-10 h-10 rounded-full bg-red-50 text-secondary-red text-[18px]"><i class="fal fa-map-marker-alt text-lg"></i></span>
-                        <a href="https://maps.app.goo.gl/n3nkNkwoLhZ98NR28" target="_blank" rel="noopener" class="text-sm lg:text-base text-gray-500 hover:text-secondary-red transition-colors duration-200">Poslovni centar<br>UŠĆE Kula 2, Beograd</a>
+                    <li class="flex items-center gap-3 text-sm lg:text-base">
+                        <span class="flex shrink-0 items-center justify-center w-10 h-10 rounded-full bg-[#FDEFF1] text-secondary-red text-[18px]"><i class="fal fa-map-marker-alt text-lg" aria-hidden="true"></i></span>
+                        <span class="text-sm lg:text-base text-gray-500">Beograd, Srbija</span>
                     </li>
-                    <li class="flex items-center gap-3">
-                        <span class="flex shrink-0 items-center justify-center w-10 h-10 rounded-full bg-red-50 text-secondary-red text-[18px]"><i class="fal fa-clock text-lg"></i></span>
-                        <span class="text-sm lg:text-base text-gray-500">09:00 - 17:00<br>Ponedeljak - Petak</span>
+                    <li class="flex items-center gap-3 text-sm lg:text-base">
+                        <span class="flex shrink-0 items-center justify-center w-10 h-10 rounded-full bg-[#FDEFF1] text-secondary-red text-[18px]"><i class="fal fa-clock text-lg" aria-hidden="true"></i></span>
+                        <span class="text-sm lg:text-base text-gray-500">09:00 – 17:00<br><span class="text-sm lg:text-base">Ponedeljak – petak</span></span>
                     </li>
                 </ul>
             </div>
 
-            <!-- Korisni linkovi -->
+            <!-- Useful links -->
             <div class="lg:col-span-3 xl:col-span-2">
                 <h3 class="text-[18px] lg:text-[22px] text-[#333333] mb-4 lg:mb-6 font-semibold">
                     Korisni linkovi
                     <span class="block w-6 h-0.5 mt-2 rounded-full bg-secondary-red" aria-hidden="true"></span>
                 </h3>
                 <ul class="space-y-3 lg:space-y-4 text-gray-500">
-                    <li><a href="nase-usluge.html" class="text-sm lg:text-base hover:text-secondary-red transition-colors duration-200">Naše usluge</a></li>
-                    <li><a href="nasi-projekti.html" class="text-sm lg:text-base hover:text-secondary-red transition-colors duration-200">Naši projekti</a></li>
-                    <li><a href="histack-fondacija.html" class="text-sm lg:text-base hover:text-secondary-red transition-colors duration-200">HiStack fondacija</a></li>
-                    <li><a href="cene-i-paketi.html" class="text-sm lg:text-base hover:text-secondary-red transition-colors duration-200">Cene i paketi</a></li>
-                    <li><a href="pomoc.html#faq" class="text-sm lg:text-base hover:text-secondary-red transition-colors duration-200">Česta pitanja</a></li>
-                    <li><a href="https://calendly.com/histackdev" target="_blank" rel="noopener" class="text-sm lg:text-base hover:text-secondary-red transition-colors duration-200">Konsultacije <i class="fal fa-external-link ml-1"></i></a></li>
+                    <li class="text-sm lg:text-base"><a href="/o-nama.html" class="text-sm lg:text-base hover:text-[#D81535] transition-colors duration-200">O nama</a></li>
+                    <li class="text-sm lg:text-base"><a href="/projekti/" class="text-sm lg:text-base hover:text-[#D81535] transition-colors duration-200">Projekti</a></li>
+                    <li class="text-sm lg:text-base"><a href="/digi-svet/" class="text-sm lg:text-base hover:text-[#D81535] transition-colors duration-200">Digi svet</a></li>
+                    <li class="text-sm lg:text-base"><a href="/resursi/proces-saradnje.html" class="text-sm lg:text-base hover:text-[#D81535] transition-colors duration-200">Proces saradnje</a></li>
+                    <li class="text-sm lg:text-base"><a href="/resursi/fondacija.html" class="text-sm lg:text-base hover:text-[#D81535] transition-colors duration-200">HiStack Fondacija</a></li>
+                    <li class="text-sm lg:text-base"><a href="/resursi/karijera.html" class="text-sm lg:text-base hover:text-[#D81535] transition-colors duration-200">Karijera</a></li>
                 </ul>
             </div>
 
-            <!-- Naše usluge -->
+            <!-- Our services -->
             <div class="lg:col-span-3 xl:col-span-2">
                 <h3 class="text-[18px] lg:text-[22px] text-[#333333] mb-4 lg:mb-6 font-semibold">
                     Naše usluge
                     <span class="block w-6 h-0.5 mt-2 rounded-full bg-secondary-red" aria-hidden="true"></span>
                 </h3>
                 <ul class="space-y-3 lg:space-y-4 text-gray-500">
-                    <li><a href="web-dizajn-razvoj.html" class="text-sm lg:text-base hover:text-secondary-red transition-colors duration-200">Web dizajn i razvoj</a></li>
-                    <li><a href="wordpress-razvoj.html" class="text-sm lg:text-base hover:text-secondary-red transition-colors duration-200">WordPress razvoj</a></li>
-                    <li><a href="e-commerce-resenja.html" class="text-sm lg:text-base hover:text-secondary-red transition-colors duration-200">E-trgovina</a></li>
-                    <li><a href="seo-digitalni-marketing.html" class="text-sm lg:text-base hover:text-secondary-red transition-colors duration-200">SEO i digitalni marketing</a></li>
-                    <li><a href="vodic-za-koriscenje-platforme.html" class="text-sm lg:text-base hover:text-secondary-red transition-colors duration-200">HiStack vodič: Platforma</a></li>
-                    <li><a href="uputstvo-za-saradnju.html" class="text-sm lg:text-base hover:text-secondary-red transition-colors duration-200">HiStack vodič: Saradnja</a></li>
+                    <li class="text-sm lg:text-base"><a href="/usluge/web-razvoj.html" class="text-sm lg:text-base hover:text-[#D81535] transition-colors duration-200">Web razvoj</a></li>
+                    <li class="text-sm lg:text-base"><a href="/usluge/razvoj-digitalnih-proizvoda.html" class="text-sm lg:text-base hover:text-[#D81535] transition-colors duration-200">Digitalni proizvodi</a></li>
+                    <li class="text-sm lg:text-base"><a href="/usluge/razvoj-mobilnih-aplikacija.html" class="text-sm lg:text-base hover:text-[#D81535] transition-colors duration-200">Mobilne aplikacije</a></li>
+                    <li class="text-sm lg:text-base"><a href="/usluge/resenja-za-e-trgovinu.html" class="text-sm lg:text-base hover:text-[#D81535] transition-colors duration-200">E-trgovina</a></li>
+                    <li class="text-sm lg:text-base"><a href="/usluge/" class="inline-flex items-center gap-2 text-sm lg:text-base font-semibold text-secondary-red hover:text-[#333333] transition-colors duration-200">Sve usluge <i class="far fa-long-arrow-right text-sm" aria-hidden="true"></i></a></li>
                 </ul>
             </div>
 
-            <!-- Pravni resursi -->
+            <!-- Legal resources -->
             <div class="lg:col-span-3 xl:col-span-2">
                 <h3 class="text-[18px] lg:text-[22px] text-[#333333] mb-4 lg:mb-6 font-semibold">
                     Pravni resursi
                     <span class="block w-6 h-0.5 mt-2 rounded-full bg-secondary-red" aria-hidden="true"></span>
                 </h3>
                 <ul class="space-y-3 lg:space-y-4 text-gray-500">
-                    <li><a href="uslovi-koriscenja.html" class="text-sm lg:text-base hover:text-secondary-red transition-colors duration-200">Uslovi korišćenja</a></li>
-                    <li><a href="politika-privatnosti.html" class="text-sm lg:text-base hover:text-secondary-red transition-colors duration-200">Politika privatnosti</a></li>
-                    <li><a href="kolacici.html" class="text-sm lg:text-base hover:text-secondary-red transition-colors duration-200">Kolačići</a></li>
-                    <li><a href="pravne-informacije.html" class="text-sm lg:text-base hover:text-secondary-red transition-colors duration-200">Pravne informacije</a></li>
-                    <li><a href="https://gdpr-info.eu/" target="_blank" rel="noopener" class="text-sm lg:text-base hover:text-secondary-red transition-colors duration-200">GDPR <i class="fal fa-external-link ml-1"></i></a></li>
-                    <li><a href="https://eur-lex.europa.eu/eli/reg/2021/23/oj/eng" target="_blank" rel="noopener" class="text-sm lg:text-base hover:text-secondary-red transition-colors duration-200">Reg. (EU) 2021/23 <i class="fal fa-external-link ml-1"></i></a></li>
+                    <li class="text-sm lg:text-base"><a href="/resursi/uslovi-koriscenja.html" class="text-sm lg:text-base hover:text-[#D81535] transition-colors duration-200">Uslovi korišćenja</a></li>
+                    <li class="text-sm lg:text-base"><a href="/resursi/politika-privatnosti.html" class="text-sm lg:text-base hover:text-[#D81535] transition-colors duration-200">Politika privatnosti</a></li>
+                    <li class="text-sm lg:text-base"><a href="/resursi/kolacici.html" class="text-sm lg:text-base hover:text-[#D81535] transition-colors duration-200">Politika kolačića</a></li>
+                    <li class="text-sm lg:text-base"><a href="/resursi/pravne-informacije.html" class="text-sm lg:text-base hover:text-[#D81535] transition-colors duration-200">Pravne informacije</a></li>
+                    <li class="text-sm lg:text-base"><a href="/resursi/eu-integracije.html" class="text-sm lg:text-base hover:text-[#D81535] transition-colors duration-200">EU integracije</a></li>
+                    <li class="text-sm lg:text-base"><a href="/resursi/" class="inline-flex items-center gap-2 text-sm lg:text-base font-semibold text-secondary-red hover:text-[#333333] transition-colors duration-200">Svi resursi <i class="far fa-long-arrow-right text-sm" aria-hidden="true"></i></a></li>
                 </ul>
             </div>
 
-            <!-- Dokumentacija + društvene mreže -->
+            <!-- Documentation + social media -->
             <div class="col-span-2 lg:col-span-3 xl:col-span-3">
                 <h3 class="text-[18px] lg:text-[22px] text-[#333333] mb-4 lg:mb-6 font-semibold">
                     Dokumentacija
                     <span class="block w-6 h-0.5 mt-2 rounded-full bg-secondary-red" aria-hidden="true"></span>
                 </h3>
-                <ul class="grid grid-cols-2 lg:grid-cols-1 gap-3">
-                    <li>
-                        <a href="wp-content/uploads/pdfs/deklaracija-o-standardu-kvaliteta-poslovanja-firme-histack.pdf" download="deklaracija-o-standardu-kvaliteta-poslovanja-firme-histack.pdf" class="group flex h-full items-center gap-3 rounded-2xl border border-[#333333]/10 bg-white p-3 hover:border-[#d81535] hover:shadow-lg transition-all duration-200">
-                            <span class="flex shrink-0 items-center justify-center w-11 h-11 rounded-xl bg-red-50 text-secondary-red text-[20px] group-hover:bg-[#d81535] group-hover:text-white transition-colors duration-200"><i class="fal fa-file-pdf text-xl"></i></span>
+                <ul class="grid grid-cols-1 min-[360px]:grid-cols-2 lg:grid-cols-1 gap-3">
+                    <li class="text-sm lg:text-base">
+                        <a href="/wp-content/uploads/pdfs/deklaracija-o-standardu-kvaliteta-poslovanja-firme-histack.pdf" download="deklaracija-o-standardu-kvaliteta-poslovanja-firme-histack.pdf" class="group flex h-full items-center gap-3 rounded-2xl border border-[#333333]/10 p-3 hover:border-[#D81535] transition-colors duration-200">
+                            <span class="flex shrink-0 items-center justify-center w-11 h-11 rounded-xl bg-[#FDEFF1] text-secondary-red text-[20px] group-hover:bg-[#D81535] group-hover:text-white transition-colors duration-200"><i class="fal fa-file-pdf text-xl" aria-hidden="true"></i></span>
                             <span class="min-w-0 flex-1">
                                 <span class="block text-sm lg:text-base font-semibold text-[#333333] leading-tight">Interni standard</span>
-                                <span class="block text-[12px] lg:text-[13px] text-gray-500">PDF dokument</span>
+                                <span class="block text-xs lg:text-[13px] text-gray-500">PDF dokument</span>
                             </span>
-                            <i class="fal fa-arrow-down-to-line hidden sm:block text-gray-400 group-hover:text-[#d81535] transition-colors duration-200" aria-hidden="true"></i>
+                            <i class="fal fa-arrow-down-to-line hidden sm:block text-gray-400 group-hover:text-[#D81535] transition-colors duration-200" aria-hidden="true"></i>
                         </a>
                     </li>
-                    <li>
-                        <a href="wp-content/uploads/pdfs/dokument-o-tehnickoj-usaglasenosti-firme-histack.pdf" download="dokument-o-tehnickoj-usaglasenosti-firme-histack.pdf" class="group flex h-full items-center gap-3 rounded-2xl border border-[#333333]/10 bg-white p-3 hover:border-[#d81535] hover:shadow-lg transition-all duration-200">
-                            <span class="flex shrink-0 items-center justify-center w-11 h-11 rounded-xl bg-red-50 text-secondary-red text-[20px] group-hover:bg-[#d81535] group-hover:text-white transition-colors duration-200"><i class="fal fa-file-pdf text-xl"></i></span>
+                    <li class="text-sm lg:text-base">
+                        <a href="/wp-content/uploads/pdfs/dokument-o-tehnickoj-usaglasenosti-firme-histack.pdf" download="dokument-o-tehnickoj-usaglasenosti-firme-histack.pdf" class="group flex h-full items-center gap-3 rounded-2xl border border-[#333333]/10 p-3 hover:border-[#D81535] transition-colors duration-200">
+                            <span class="flex shrink-0 items-center justify-center w-11 h-11 rounded-xl bg-[#FDEFF1] text-secondary-red text-[20px] group-hover:bg-[#D81535] group-hover:text-white transition-colors duration-200"><i class="fal fa-file-pdf text-xl" aria-hidden="true"></i></span>
                             <span class="min-w-0 flex-1">
                                 <span class="block text-sm lg:text-base font-semibold text-[#333333] leading-tight">Tehnička usaglašenost</span>
-                                <span class="block text-[12px] lg:text-[13px] text-gray-500">PDF dokument</span>
+                                <span class="block text-xs lg:text-[13px] text-gray-500">PDF dokument</span>
                             </span>
-                            <i class="fal fa-arrow-down-to-line hidden sm:block text-gray-400 group-hover:text-[#d81535] transition-colors duration-200" aria-hidden="true"></i>
+                            <i class="fal fa-arrow-down-to-line hidden sm:block text-gray-400 group-hover:text-[#D81535] transition-colors duration-200" aria-hidden="true"></i>
                         </a>
                     </li>
                 </ul>
@@ -1087,12 +1132,12 @@
                 </h3>
                 <div class="flex flex-wrap gap-3">
                     <a href="https://www.instagram.com/histack.rs/" target="_blank" rel="noopener noreferrer" aria-label="HiStack na Instagramu (otvara se u novom tabu)"
-                      class="group inline-flex items-center gap-2 h-11 px-5 rounded-full border-2 border-secondary-red text-sm lg:text-base font-semibold text-[#333333] hover:bg-[#333333] hover:border-[#333333] hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#D81534]/40 transition-all duration-200">
+                      class="group inline-flex items-center gap-2 h-11 px-5 rounded-full border-2 border-secondary-red text-sm lg:text-base font-semibold text-[#333333] hover:bg-[#D81534] hover:border-[#D81534] hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#D81534]/40 transition-all duration-200">
                         <i class="fab fa-instagram text-[18px] text-secondary-red group-hover:text-white transition-colors duration-200" aria-hidden="true"></i>
                         Instagram
                     </a>
                     <a href="https://www.linkedin.com/in/histack-development/" target="_blank" rel="noopener noreferrer" aria-label="HiStack na LinkedInu (otvara se u novom tabu)"
-                      class="group inline-flex items-center gap-2 h-11 px-5 rounded-full border-2 border-secondary-red text-sm lg:text-base font-semibold text-[#333333] hover:bg-[#333333] hover:border-[#333333] hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#D81534]/40 transition-all duration-200">
+                      class="group inline-flex items-center gap-2 h-11 px-5 rounded-full border-2 border-secondary-red text-sm lg:text-base font-semibold text-[#333333] hover:bg-[#D81534] hover:border-[#D81534] hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#D81534]/40 transition-all duration-200">
                         <i class="fab fa-linkedin-in text-[18px] text-secondary-red group-hover:text-white transition-colors duration-200" aria-hidden="true"></i>
                         LinkedIn
                     </a>
@@ -1112,9 +1157,8 @@
     <!-- Footer secondary section end -->
 
     <!-- Modules generated by: 'modules-loader_ext-pattern-id_7d2a.php' -->
-    <!-- fullscreen overlay -->
+    <!-- Fullscreen overlay -->
     <div id="header-black-overlay-on-hover" class="fixed inset-0 bg-black bg-opacity-50 opacity-0 pointer-events-none transition-opacity duration-300 z-10"></div>
-    <!-- Scroll to top start -->
     <!-- Scroll to top start -->
     <button type="button" id="scroll-to-top-button" aria-label="Nazad na vrh stranice" title="Nazad na vrh"
             class="fixed z-40 flex items-center justify-center w-12 h-12 lg:w-14 lg:h-14 rounded-full bg-secondary-red text-white shadow-xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#D81534]/40 focus-visible:ring-offset-2">
@@ -1128,10 +1172,10 @@
     <!-- Scroll to top end -->
      
     <!-- Custom JS -->
-    <script src="wp-content/themes/HiStack/main.js"></script>
+    <script src="/wp-content/themes/HiStack/main.js"></script>
      
     <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-    <script src="wp-content/themes/HiStack/assets/aos.js"></script>
+    <script src="/wp-content/themes/HiStack/assets/aos.js"></script>
     <!-- Default Statcounter code for HiStack https://www.histack.rs -->
     <script type="text/javascript">
     var sc_project=13140097; 
